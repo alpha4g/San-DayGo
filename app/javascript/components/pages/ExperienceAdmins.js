@@ -11,7 +11,7 @@ class ExperienceAdmins extends React.Component {
        	  }
 
     componentDidMount(){
-	      fetch('/experiences.json')
+	      fetch('/experiences')
 	      .then((response) => {
 	        return response.json()
 	      })

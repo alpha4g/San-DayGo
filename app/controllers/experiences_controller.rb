@@ -2,9 +2,8 @@ class ExperiencesController < ActionController::API
 
     def index
         exp = Experience.all
-        respond_to do |format|
-            format.json{ render json: exp}
-        end
+        render json: exp
+        
     end
 
     def new
@@ -12,7 +11,7 @@ class ExperiencesController < ActionController::API
 
     def create
         exp = Experience.create(experience_params)
-        if exp.save?
+        if exp.save
             render json: exp
         else
             render json: exp.errors
