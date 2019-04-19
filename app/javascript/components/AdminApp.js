@@ -15,18 +15,15 @@ import NoMatch from './pages/NoMatch'
 class AdminApp extends React.Component {
   render () {
     return (
+    <Router>
       <React.Fragment>
-      <Router>
-         <div>
           <Switch>
              <Route exact path="/admin" component={ExperienceAdmins} />
              <Route path="/NewExperience" component={NewExperience} />
              <Route component={NoMatch}/>
            </Switch>
-
-         </div>
-       </Router>
       </React.Fragment>
+    </Router>
     );
   }
 }

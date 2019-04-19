@@ -1,4 +1,4 @@
-class ExperiencesController < ApplicationController
+class ExperiencesController < ActionController::API
 
     def index
         exp = Experience.all

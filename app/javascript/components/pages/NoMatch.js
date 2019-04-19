@@ -5,7 +5,7 @@ class NoMatch extends React.Component {
   render () {
     return (
       <React.Fragment>
-      <h1>Page does not Exist!</h1>
+        <h1>Page does not Exist!</h1>
       </React.Fragment>
     );
   }
