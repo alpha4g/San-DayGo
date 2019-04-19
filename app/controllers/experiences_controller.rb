@@ -3,10 +3,6 @@ class ExperiencesController < ActionController::API
     def index
         exp = Experience.all
         render json: exp
-        
-    end
-
-    def new
     end
 
     def create
@@ -14,14 +10,27 @@ class ExperiencesController < ActionController::API
         if exp.save
             render json: exp
         else
-            render json: exp.errors
+            render json: exp.errors, status: :unprocessable_entity
         end
     end
 
-    def update
+    def edit
+      exp = Experience.find(params[:id])
     end
 
-    def delete
+    def update
+      exp = Experience.find(params[:id])
+        if exp.update_attributes(experience_params)
+          render json: exp
+        else
+          render json: exp.errors, status: :unprocessable_entity
+        end
+    end
+
+    def destroy
+      exps = Experience.all
+      exp = Experience.destroy(params[:id])
+      render json: exps
     end
 
     private
