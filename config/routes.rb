@@ -8,6 +8,6 @@ get 'admin', to: 'pages#admin', as: :protected
 
 get "*path", to: 'pages#admin', constraints: ->(request){request.format.html?}
 
-    root to: 'pages#admin'
+    root to: 'pages#tourist'
 
 end

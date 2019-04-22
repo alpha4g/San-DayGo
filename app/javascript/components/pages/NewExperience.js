@@ -139,7 +139,6 @@ class NewExperience extends React.Component {
             onClick = {this.handleSubmit}
             type="submit">Create The Experience</Button>
         </Form>
-        <Link to="/NewExperience">Create New Experience</Link><br/>
         <Link to="/admin">Back</Link>
         </div>
     </React.Fragment>
