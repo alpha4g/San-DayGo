@@ -19,10 +19,10 @@ class Itinerary extends React.Component {
           <h1>Day Time Activities</h1>
             <ul>
               <li>
-                1: {experience_name}<br/>{experience_description}
+                1) {experience_name}<br/>{experience_description}
               </li>
               <li>
-                2: {experience_name}<br/>{experience_description}
+                2) {experience_name}<br/>{experience_description}
               </li>
             </ul>
         </section>
@@ -30,13 +30,13 @@ class Itinerary extends React.Component {
           <h1>Suggested Restaurants</h1>
             <ul>
               <li>
-                1: {experience_name}<br/>{experience_description}
+                1) {experience_name}<br/>{experience_description}
               </li>
               <li>
-                2: {experience_name}<br/>{experience_description}
+                2) {experience_name}<br/>{experience_description}
               </li>
               <li>
-                3: {experience_name}<br/>{experience_description}
+                3) {experience_name}<br/>{experience_description}
               </li>
             </ul>
         </section>
@@ -44,10 +44,10 @@ class Itinerary extends React.Component {
           <h1>Nighttime Activities</h1>
             <ul>
               <li>
-                1: {experience_name}<br/>{experience_description}
+                1) {experience_name}<br/>{experience_description}
               </li>
               <li>
-                2: {experience_name}<br/>{experience_description}
+                2) {experience_name}<br/>{experience_description}
               </li>
             </ul>
         </section>
