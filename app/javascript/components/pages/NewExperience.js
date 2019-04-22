@@ -134,10 +134,10 @@ class NewExperience extends React.Component {
                     type="text"
                     placeholder="Enter Hours of Operation"/>
             </Form.Group><br/>
-            <Button
+            <Link to="/admin"
             name="name"
             onClick = {this.handleSubmit}
-            type="submit">Create The Experience</Button>
+            type="submit">Create The Experience</Link>
         </Form><br/>
         <Link to="/admin">Back</Link>
         </div>
