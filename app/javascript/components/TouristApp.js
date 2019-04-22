@@ -1,10 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Tourist from './pages/Tourist'
+
+
 class TouristApp extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <div>Hello Tourist</div>
+        <Tourist />
       </React.Fragment>
     );
   }
