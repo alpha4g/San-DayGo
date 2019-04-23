@@ -44,7 +44,7 @@ class Tourist extends React.Component {
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/Adventerous">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
@@ -53,11 +53,11 @@ class Tourist extends React.Component {
                 <Card.Img variant='top' src={GenericImage} />
                 <Card.Body>
                   <br />
-                  <Card.Title>ADVENTUROUS</Card.Title>
+                  <Card.Title>FOODIE</Card.Title>
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/Foodie">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
@@ -66,11 +66,11 @@ class Tourist extends React.Component {
                 <Card.Img variant='top' src={GenericImage} />
                 <Card.Body>
                   <br />
-                  <Card.Title>ADVENTUROUS</Card.Title>
+                  <Card.Title>BEACH BUM</Card.Title>
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/BeachBum">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
@@ -79,11 +79,11 @@ class Tourist extends React.Component {
                 <Card.Img variant='top' src={GenericImage} />
                 <Card.Body>
                   <br />
-                  <Card.Title>ADVENTUROUS</Card.Title>
+                  <Card.Title>FAMILY</Card.Title>
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/Family">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
@@ -92,11 +92,11 @@ class Tourist extends React.Component {
                 <Card.Img variant='top' src={GenericImage} />
                 <Card.Body>
                   <br />
-                  <Card.Title>ADVENTUROUS</Card.Title>
+                  <Card.Title>SPORTY</Card.Title>
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/Sporty">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
@@ -105,11 +105,11 @@ class Tourist extends React.Component {
                 <Card.Img variant='top' src={GenericImage} />
                 <Card.Body>
                   <br />
-                  <Card.Title>ADVENTUROUS</Card.Title>
+                  <Card.Title>CULTURAL</Card.Title>
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/Cultural">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
@@ -118,11 +118,11 @@ class Tourist extends React.Component {
                 <Card.Img variant='top' src={GenericImage} />
                 <Card.Body>
                   <br />
-                  <Card.Title>ADVENTUROUS</Card.Title>
+                  <Card.Title>FASHIONISTA</Card.Title>
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/Fashonista">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
@@ -131,11 +131,11 @@ class Tourist extends React.Component {
                 <Card.Img variant='top' src={GenericImage} />
                 <Card.Body>
                   <br />
-                  <Card.Title>ADVENTUROUS</Card.Title>
+                  <Card.Title>LGBT</Card.Title>
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/LGBT">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
@@ -144,11 +144,11 @@ class Tourist extends React.Component {
                 <Card.Img variant='top' src={GenericImage} />
                 <Card.Body>
                   <br />
-                  <Card.Title>ADVENTUROUS</Card.Title>
+                  <Card.Title>OUTDOORS</Card.Title>
                   <Card.Text>
                     Experience the adreniline rush with a day filled with high-energy experiences.
                   </Card.Text>
-                  <Button variant="primary">Make This Itinery</Button>
+                  <Button variant="primary"><Link to="/itinerary/Outdoors">Make Your Itinerary</Link></Button>
                   <br />
                   <br />
                 </Card.Body>
