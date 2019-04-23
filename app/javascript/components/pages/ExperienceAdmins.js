@@ -51,13 +51,12 @@ class ExperienceAdmins extends React.Component {
   render () {
     return (
      <React.Fragment>
+
             <h1>Admin Page of Experiences</h1>
 
                 {this.state.experiences.map((experience, index) =>
                 <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index}/>
                 )}
-
-
 
         <Link to="/NewExperience">Create New Experience</Link>
         </React.Fragment>

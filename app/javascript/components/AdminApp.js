@@ -15,11 +15,11 @@ class AdminApp extends React.Component {
     return (
     <Router>
       <React.Fragment>
-          <Switch>
-             <Route exact path="/admin" component={ExperienceAdmins} />
-             <Route path="/NewExperience" component={NewExperience} />
-             <Route component={NoMatch}/>
-           </Switch>
+        <Switch>
+           <Route exact path="/admin" component={ExperienceAdmins} />
+           <Route path="/NewExperience" component={NewExperience} />
+           <Route component={NoMatch}/>
+        </Switch>
       </React.Fragment>
     </Router>
     );
