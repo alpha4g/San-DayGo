@@ -28,8 +28,9 @@ class ExperiencesController < ActionController::API
     end
 
     def destroy
-      exps = Experience.all
-      exp = Experience.destroy(params[:id])
+        exp = Experience.destroy(params[:id])
+        exps = Experience.all
+
       render json: exps
     end
 
