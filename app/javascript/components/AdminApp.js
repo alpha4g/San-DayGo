@@ -10,18 +10,16 @@ import ExperienceAdmins from './pages/ExperienceAdmins'
 import NewExperience from './pages/NewExperience'
 import NoMatch from './pages/NoMatch'
 
-
-
 class AdminApp extends React.Component {
   render () {
     return (
     <Router>
       <React.Fragment>
-          <Switch>
-             <Route exact path="/admin" component={ExperienceAdmins} />
-             <Route path="/NewExperience" component={NewExperience} />
-             <Route component={NoMatch}/>
-           </Switch>
+        <Switch>
+           <Route exact path="/admin" component={ExperienceAdmins} />
+           <Route path="/NewExperience" component={NewExperience} />
+           <Route component={NoMatch}/>
+        </Switch>
       </React.Fragment>
     </Router>
     );

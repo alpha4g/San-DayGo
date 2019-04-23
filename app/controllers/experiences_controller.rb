@@ -1,7 +1,7 @@
 class ExperiencesController < ActionController::API
 
     def index
-        exp = Experience.all
+        exp = Experience.all.order("created_at DESC")
         render json: exp
     end
 

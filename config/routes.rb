@@ -3,10 +3,14 @@ Rails.application.routes.draw do
 resources :experiences, constraints: ->(request){!request.format.html?}
 
   devise_for :users
+  get 'itinerary', to: 'pages#tourist', constraints: ->(request){request.format.html?}
 
-get 'admin', to: 'pages#admin', as: :protected
+authenticated :user do
+  get 'admin', to: 'pages#admin', as: :protected
+  get "*path", to: 'pages#admin', constraints: ->(request){request.format.html?}
+  root to: 'pages#admin'
+end
 
-get "*path", to: 'pages#admin', constraints: ->(request){request.format.html?}
 
     root to: 'pages#tourist'
 

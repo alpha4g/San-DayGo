@@ -3,11 +3,11 @@ class PagesController < ApplicationController
 
     def tourist
     end
-    
+
     def admin
     end
 
-    def tourist
+    def itinerary
     end
-
+    
 end
