@@ -6,21 +6,9 @@ class ExperienceAdmins extends React.Component {
       constructor(props){
        	    super(props)
        	    this.state = {
-       	      experiences: [],
-              edit: false
+       	      experiences: []
        	    }
        	  }
-
-      handleEdit(cat){
-        if(this.state.edit){
-          let experience_name = this.experience_name.value
-          let age = this.age.value
-          let enjoys = this.enjoys.value
-          }
-        this.setState({
-        edit: !this.state.edit
-        })
-    }
 
     componentDidMount(){
 	      fetch('/experiences')

@@ -9,17 +9,15 @@ import {
   Link
 } from 'react-router-dom'
 
-
-
 class TouristApp extends React.Component {
   render () {
     return (
-    <Router>
+      <Router>
         <React.Fragment>
-              <Route exact path="/itinerary" component={Itinerary} />
-              <Route exact path="/" component={Tourist} />
+          <Route exact path="/itinerary" component={Itinerary} />
+          <Route exact path="/" component={Tourist} />
         </React.Fragment>
-    </Router>
+      </Router>
     );
   }
 }

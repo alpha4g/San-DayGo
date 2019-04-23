@@ -7,4 +7,7 @@ class PagesController < ApplicationController
     def admin
     end
 
+    def itinerary
+    end
+    
 end

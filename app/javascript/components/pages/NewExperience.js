@@ -49,7 +49,6 @@ class NewExperience extends React.Component {
       let { form } = this.state
     return (
     <React.Fragment>
-        <div>
             <h1>Enter New Experience Here</h1>
         <Form>
             <Form.Group controlId="">
@@ -140,7 +139,6 @@ class NewExperience extends React.Component {
             type="submit">Create The Experience</Link>
         </Form><br/>
         <Link to="/admin">Back</Link>
-        </div>
     </React.Fragment>
 
             );
