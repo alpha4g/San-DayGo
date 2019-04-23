@@ -44,7 +44,7 @@ class Itinerary extends React.Component {
           <h1>Nighttime Activities</h1>
             <ul>
               <li>
-                {experience_name}<br/>{experience_description}
+                {this.experience_name}<br/>{this.experience_description}
               </li>
               <li>
                 {experience_name}<br/>{experience_description}
