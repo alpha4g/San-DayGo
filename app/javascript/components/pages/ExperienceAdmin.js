@@ -14,7 +14,7 @@ class ExperienceAdmin extends React.Component {
     modalOpen = () => {
         this.setState({
            modalShow : true,
-           experience: experience
+
         });
     }
      modalEdit = () => {
@@ -23,8 +23,10 @@ class ExperienceAdmin extends React.Component {
         });
     }
 
-
-    modalClose = () => this.setState({ modalShow: false });
+    modalClose = () =>
+    this.setState({
+        modalShow: false
+    });
 
     delete=(id)=>{
         this.props.delete(id)
@@ -40,11 +42,13 @@ class ExperienceAdmin extends React.Component {
                 <p>Experience Type: {experience.experience_type}</p>
                 <br/>
                 <br/>
-                <p><button onClick={() => this.setState({ modalOpen: true })}>View Details</button></p>
-                <p><button onClick={() => this.setState({ modalEdit:true })}>Edit Info</button></p>
+                <p><button onClick={this.modalOpen}>View Details</button></p>
+                <p><button onClick={this.modalEdit}>Edit Info</button></p>
                 <p><button onClick={() => this.delete(experience.id)}>Delete</button></p>
 
-                <Modal show = {this.state.modalShow}>
+                { this.state.modalShow ? <div onClick={this.modalClose} className="back-drop"></div> : null }
+
+                <Modal className="modal" show = {this.state.modalShow} close={this.modalClose}>
                   <Modal.Header>
                     <Modal.Title>{experience.experience_name}</Modal.Title>
                   </Modal.Header>
