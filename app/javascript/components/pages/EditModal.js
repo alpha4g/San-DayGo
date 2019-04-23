@@ -50,7 +50,10 @@ class EditModal extends Component {
         this.setState({ hours: e.target.value });
     }
 
-    modalClose = () => this.setState({ modalEditShow: false });
+    modalClose = () =>
+    this.setState({
+        modalShow: false
+    });
 
     render() {
         return (
@@ -71,8 +74,8 @@ class EditModal extends Component {
                   </Modal.Body>
 
                   <Modal.Footer>
-                    <Button variant="secondary">Close</Button>
-                    <Button type="button" className="btn btn-primary" data-dismiss="modal" onClick={() => { this.handleSave() }}>Save changes</Button>
+                    <Button onClick={this.modalClose} variant="secondary">Close</Button>
+                    <Button type="button" className="btn btn-primary" data-dismiss="modal" onClick={this.handleSave}>Save changes</Button>
                   </Modal.Footer>
                 </Modal.Dialog>;
             </React.Fragment>
