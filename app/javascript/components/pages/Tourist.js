@@ -8,10 +8,8 @@ import Cultural from '../../images/Cultural.jpg'
 import Family from '../../images/Family.jpg'
 import Fashionista from '../../images/Fashionista.jpg'
 import Foodie from '../../images/Foodie.jpg'
-import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
-import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
-import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
-import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
+import HeaderPlaceholder from '../../images/Header-Placeholder.jpg';
+import GenericImage from '../../images/Experience-Placeholder-Image.jpg';
 import {
   Container,
   Row,
@@ -30,7 +28,7 @@ class Tourist extends React.Component {
         </div>
             <section className="section-padding">
               <p className="center">
-              <span className="welcome-text-blue">WELCOME TO</span><span>&nbsp;</span><span className="welcome-text-orange">SAN</span><span span className="welcome-text-blue">DAY</span><span span className="welcome-text-orange">GO</span><span span className="welcome-text-blue">!</span>
+              <span className="welcome-text-blue">WELCOME TO</span><span>&nbsp;</span><span className="welcome-text-orange">SAN</span><span className="welcome-text-blue">DAY</span><span className="welcome-text-orange">GO</span><span className="welcome-text-blue">!</span>
               </p>
                 <p>Located on the coast of the Pacific Ocean in Southern California, San Diego is widely known as “America’s Finest City.” Famous for its 70 miles and of white-sand beaches and amazing weather, the city offers an abundance of fun attractions for visitors of all ages.</p>
                 <p>Boasting a citywide population of more than 1.3 million and more than 3 million residents countywide, San Diego is California’s second largest city and the United States’ eighth largest. San Diego County is made up of 18 incorporate cities and towns along with other charismatic neighborhoods and communities, such as Carlsbad, Coronado, Del Mar, Downtown San Diego’s Gaslamp Quarter, Point Loma, Chula Vista, Old Town, La Jolla, and North Park.</p>
@@ -59,11 +57,11 @@ class Tourist extends React.Component {
                           <Card style={{ width: '20rem' }}>
                             <Card.Img variant='top' src={GenericImage} />
                             <Card.Body>
-                              <Card.Title className="card-title">Adventurous</Card.Title>
+                              <Card.Title className="card-title">Adrenaline</Card.Title>
                               <Card.Text className="center">
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-                              <Button className="button" variant="primary">Make This Itinery</Button>
+                              <Button className="button" variant="primary"><Link to="/itinerary/Adrenaline">Make This Itinerary</Link></Button>
                               <br />
                             </Card.Body>
                           </Card>
@@ -76,7 +74,7 @@ class Tourist extends React.Component {
                               <Card.Text>
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-                              <Button variant="primary">Make This Itinery</Button>
+                              <Button variant="primary"><Link to="/itinerary/Foodie">Make This Itinerary</Link></Button>
                               <br />
                             </Card.Body>
                           </Card>
@@ -89,7 +87,7 @@ class Tourist extends React.Component {
                               <Card.Text>
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-                              <Button variant="primary">Make This Itinery</Button>
+                              <Button variant="primary"><Link to="/itinerary/BeachBum">Make This Itinerary</Link></Button>
                               <br />
                             </Card.Body>
                           </Card>
@@ -107,7 +105,7 @@ class Tourist extends React.Component {
                             <Card.Text>
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                            <Button variant="primary">Create Itinery</Button>
+                            <Button variant="primary"><Link to="/itinerary/Family">Make This Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -120,7 +118,7 @@ class Tourist extends React.Component {
                             <Card.Text>
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                            <Button variant="primary">Create Itinery</Button>
+                            <Button variant="primary"><Link to="/itinerary/Sporty">Make This Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -133,7 +131,7 @@ class Tourist extends React.Component {
                             <Card.Text>
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                            <Button variant="primary">Create Itinery</Button>
+                            <Button variant="primary"><Link to="/itinerary/Cultural">Make This Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -151,7 +149,7 @@ class Tourist extends React.Component {
                             <Card.Text>
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                            <Button variant="primary">Create Itinery</Button>
+                            <Button variant="primary"><Link to="/itinerary/Fashionista">Make This Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -164,7 +162,7 @@ class Tourist extends React.Component {
                             <Card.Text>
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                            <Button variant="primary">Create Itinery</Button>
+                            <Button variant="primary"><Link to="/itinerary/LGBT">Make This Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -177,7 +175,7 @@ class Tourist extends React.Component {
                             <Card.Text>
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                            <Button variant="primary">Create Itinery</Button>
+                            <Button variant="primary"><Link to="/itinerary/Outdoors">Make This Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
