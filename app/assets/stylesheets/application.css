@@ -19,12 +19,14 @@
      font-family: 'Roboto', sans-serif;
      font-size: 1.1rem;
      color: #868687;
+     letter-spacing: -0.05px;
  }
 
 h1 {
     font-family: 'Fjalla One';
     font-size: 4.5rem;
     text-align: center;
+    letter-spacing: -1px;
 }
 
 h2 {
@@ -32,6 +34,7 @@ h2 {
     font-size: 3.25rem;
     text-align: center;
     color: #faa431;
+    letter-spacing: -1px;
 }
 
 h3 {
@@ -39,6 +42,7 @@ h3 {
     font-size: 2.5rem;
     text-align: center;
     color: #faa431;
+    letter-spacing: -1px;
 }
 
 h4 {
@@ -46,6 +50,7 @@ h4 {
     font-size: 1rem;
     text-align: center;
     color: #faa431;
+    letter-spacing: -1px;
 }
 
 .tourist-image {
@@ -56,9 +61,10 @@ h4 {
 }
 
 .experience-col {
-    width: 200px;
     padding: 10px;
-    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    min-width: 300px;
 }
 
 .section-padding {
@@ -68,8 +74,24 @@ h4 {
     margin-bottom: 80px;
 }
 
+.footer-padding {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .create-section-background {
     background-color: #1b75bc;
+
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 100%;
+}
+
+.footer-background {
+    background-color: #faa431;
     background-position: center;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -78,26 +100,28 @@ h4 {
 
 .white-h2-title {
     color: #ffffff;
+    letter-spacing: -1px;
 }
 
 .white-p-font {
     color: #ffffff;
-}
-
-.homepage-bridge-photo {
-    margin: auto;
+    text-align: center;
 }
 
 .welcome-text-orange {
     font-family: 'Fjalla One';
     font-size: 6.0rem;
     color: #faa431;
+    letter-spacing: -4px;
+    line-height: 1.5rem;
 }
 
 .welcome-text-blue {
     font-family: 'Fjalla One';
     font-size: 6.0rem;
     color: #1b75bc;
+    letter-spacing: -4px;
+    line-height: 6rem;
 }
 
 .center {
@@ -106,7 +130,48 @@ h4 {
 
 .card-title {
     font-family: 'Fjalla One';
-    font-size: 2rem;
+    font-size: 1.65rem;
     text-align: center;
-    color: #faa431;
+    color: #1b75bc;
+    letter-spacing: -1px;
+}
+
+.button {
+    margin: auto;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    width: 100%;
+}
+
+.card-text {
+    text-align: center;
+    line-height: 1.5rem;
+}
+ .light-blue-background {
+     background-color: #dbf0fc;
+     background-position: center;
+     padding-top: 80px;
+     padding-bottom: 80px;
+     height: 100%;
+ }
+
+ .flex-container {
+     margin: auto;
+     padding: 10px;
+     align-self: center;
+     /* display: flex;
+     justify-content: space-around;
+     flex-flow: row wrap;
+     padding: 0px;
+     margin: 0px;
+     list-style: none;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     -webkit-flex-flow: row wrap; */
+ }
+
+.responsive {
+    width: 100%;
+    height: auto;
 }
