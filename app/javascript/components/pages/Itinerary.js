@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
+import Button from 'react-bootstrap'
 
 class Itinerary extends React.Component {
   constructor(props){
@@ -38,7 +39,7 @@ class Itinerary extends React.Component {
       console.log("Error", e)
     })
   }
-
+// this.props.match.params.experience_id (this needs to happen in order to be propped over)
   componentDidUpdate = (prevProps) => {
     const prevMatch = prevProps.match
     const { match } = this.props
@@ -103,7 +104,6 @@ class Itinerary extends React.Component {
             })}
           </ul>
         </section>
-
         <Link to="/">Back</Link>
       </React.Fragment>
     );

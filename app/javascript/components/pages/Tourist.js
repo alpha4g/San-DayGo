@@ -5,17 +5,12 @@ import MainImage from '../../images/Landing-Page-Header.png';
 import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
 import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
 import AboutSanDiego from '../../images/San-Diego-About.jpg'
-
 import Adrenaline from '../../images/Adrenaline.jpg'
 import Beaches from '../../images/Beaches.jpg'
 import Cultural from '../../images/Cultural.jpg'
 import Family from '../../images/Family.jpg'
 import Fashionista from '../../images/Fashionista.jpg'
 import Foodie from '../../images/Foodie.jpg'
-
-import HeaderPlaceholder from '../../images/Header-Placeholder.jpg';
-import GenericImage from '../../images/Experience-Placeholder-Image.jpg';
-
 import LGBT from '../../images/LGBT.jpg'
 import Outdoors from '../../images/Outdoors.jpg'
 import Sporty from '../../images/Sporty.jpg'
@@ -36,14 +31,12 @@ class Tourist extends React.Component {
       <React.Fragment>
         <div>
         <div className='tourist-image'>
-            <Picture src={MainImage} class="responsive" alt='San Diego Skyline' />
+            <Picture src={MainImage} className="responsive" alt='San Diego Skyline' />
         </div>
             <section className="section-padding">
               <p className="center">
 
               <span className="welcome-text-blue">WELCOME TO</span><span>&nbsp;</span><span className="welcome-text-orange">SAN</span><span className="welcome-text-blue">DAY</span><span className="welcome-text-orange">GO</span><span className="welcome-text-blue">!</span>
-
-              <span className="welcome-text-blue">WELCOME TO</span><span>&nbsp;&nbsp;&nbsp;</span><span className="welcome-text-orange">SAN</span><span className="welcome-text-blue">DAY</span><span className="welcome-text-orange">GO</span><span className="welcome-text-blue">!</span>
 
               </p>
                 <p className="center">Located on the coast of the Pacific Ocean in Southern California, San Diego is widely known as “America’s Finest City.” Famous for its 70 miles and of white-sand beaches and amazing weather, the city offers an abundance of fun attractions for visitors of all ages.</p>
@@ -54,7 +47,7 @@ class Tourist extends React.Component {
             </section>
             <div className="create-section-background">
                 <section className="section-padding">
-                <Picture src={AboutSanDiego} class="responsive" alt='San Diego Skyline and Coronado Bridge' />
+                <Picture src={AboutSanDiego} className="responsive" alt='San Diego Skyline and Coronado Bridge' />
                 <br />
                 <br />
                 <br />
@@ -74,17 +67,10 @@ class Tourist extends React.Component {
                             <Card.Img variant='top' src={Adrenaline} />
                             <Card.Body>
                               <Card.Title className="card-title">Adrenaline</Card.Title>
-
                               <Card.Text className="center">
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/Adrenaline">Make This Itinerary</Link></Button>
-
-                              <Card.Text className="card-text">
-                                Experience the adreniline rush with a day filled with high-energy experiences.
-                              </Card.Text>
-                              <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/Adrenaline">Create Itinerary</Link></Button>
                               <br />
                             </Card.Body>
                           </Card>
@@ -97,10 +83,7 @@ class Tourist extends React.Component {
                               <Card.Text className="center">
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-
-
-                              <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/BeachBum">Create Itinerary</Link></Button>
                               <br />
                             </Card.Body>
                           </Card>
@@ -113,11 +96,7 @@ class Tourist extends React.Component {
                               <Card.Text className="center">
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-
-                              <Button variant="primary"><Link to="/itinerary/BeachBum">Make This Itinerary</Link></Button>
-
-                              <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/Outdoors">Create Itinerary</Link></Button>
                               <br />
                             </Card.Body>
                           </Card>
@@ -130,11 +109,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-
-                            <Button variant="primary"><Link to="/itinerary/Family">Make This Itinerary</Link></Button>
-
-                            <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/Family">Create Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -147,11 +122,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-
-                            <Button variant="primary"><Link to="/itinerary/Sporty">Make This Itinerary</Link></Button>
-
-                            <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/Sporty">Create Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -164,11 +135,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-
-                            <Button variant="primary"><Link to="/itinerary/Cultural">Make This Itinerary</Link></Button>
-
-                            <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/Cultural">Create Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -181,11 +148,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-
-                            <Button variant="primary"><Link to="/itinerary/Fashionista">Make This Itinerary</Link></Button>
-
-                            <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/Fashionista">Create Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -198,11 +161,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-
-                            <Button variant="primary"><Link to="/itinerary/LGBT">Make This Itinerary</Link></Button>
-
-                            <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/LGBTQ">Create Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -215,11 +174,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-
-                            <Button variant="primary"><Link to="/itinerary/Outdoors">Make This Itinerary</Link></Button>
-
-                            <Button className="button" variant="primary">Create Itinery</Button>
-
+                              <Button className="button" variant="primary"><Link to="/itinerary/Foodie">Create Itinerary</Link></Button>
                             <br />
                           </Card.Body>
                         </Card>
@@ -229,7 +184,7 @@ class Tourist extends React.Component {
             </section>
             <div className="create-section-background">
                 <section className="section-padding">
-                <Picture src={AboutSanDiego} class="responsive" alt='San Diego Skyline and Coronado Bridge' />
+                <Picture src={AboutSanDiego} className="responsive" alt='San Diego Skyline and Coronado Bridge' />
                 <br />
                 <br />
                 <br />
