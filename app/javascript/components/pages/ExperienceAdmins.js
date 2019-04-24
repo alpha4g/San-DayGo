@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
 import ExperienceAdmin from './ExperienceAdmin'
+import EditModal from './EditModal'
 import AdminApp from '../AdminApp'
 
 
@@ -57,6 +58,10 @@ class ExperienceAdmins extends React.Component {
                 {this.state.experiences.map((experience, index) =>
                 <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index}/>
                 )}
+                {this.state.experiences.map((experience, index) =>
+                <EditModal experience={experience} index={index} key={index}/>
+                )}
+
 
         <Link to="/NewExperience">Create New Experience</Link>
         </React.Fragment>
