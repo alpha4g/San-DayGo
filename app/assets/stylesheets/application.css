@@ -61,9 +61,10 @@ h4 {
 }
 
 .experience-col {
-    width: 200px;
     padding: 10px;
-    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    min-width: 300px;
 }
 
 .section-padding {
@@ -106,15 +107,12 @@ h4 {
     text-align: center;
 }
 
-.homepage-bridge-photo {
-    margin: auto;
-}
-
 .welcome-text-orange {
     font-family: 'Fjalla One';
     font-size: 6.0rem;
     color: #faa431;
     letter-spacing: -4px;
+    line-height: 1.5rem;
 }
 
 .welcome-text-blue {
@@ -122,6 +120,7 @@ h4 {
     font-size: 6.0rem;
     color: #1b75bc;
     letter-spacing: -4px;
+    line-height: 6rem;
 }
 
 .center {
@@ -154,3 +153,24 @@ h4 {
      padding-bottom: 80px;
      height: 100%;
  }
+
+ .flex-container {
+     margin: auto;
+     padding: 10px;
+     align-self: center;
+     /* display: flex;
+     justify-content: space-around;
+     flex-flow: row wrap;
+     padding: 0px;
+     margin: 0px;
+     list-style: none;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     -webkit-flex-flow: row wrap; */
+ }
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
