@@ -15,6 +15,7 @@ import Foodie from '../../images/Foodie.jpg'
 import LGBT from '../../images/LGBT.jpg'
 import Outdoors from '../../images/Outdoors.jpg'
 import Sporty from '../../images/Sporty.jpg'
+import { Picture } from 'react-responsive-picture';
 
 import {
   Container,
@@ -30,7 +31,7 @@ class Tourist extends React.Component {
       <React.Fragment>
         <div>
         <div className='tourist-image'>
-            <img src={MainImage} alt='San Diego Skyline' />
+            <Picture src={MainImage} class="responsive" alt='San Diego Skyline' />
         </div>
             <section className="section-padding">
               <p className="center">
@@ -44,7 +45,7 @@ class Tourist extends React.Component {
             </section>
             <div className="create-section-background">
                 <section className="section-padding">
-                <img className="homepage-bridge-photo" src={AboutSanDiego} alt='San Diego Skyline and Coronado Bridge' />
+                <Picture src={AboutSanDiego} class="responsive" alt='San Diego Skyline and Coronado Bridge' />
                 <br />
                 <br />
                 <br />
@@ -57,10 +58,10 @@ class Tourist extends React.Component {
             <section className="light-blue-background">
               <h2>CHOOSE YOUR ADVENTURE</h2>
               <br />
-                  <Container>
+                  <Container className="flex-container">
                     <Row>
                       <Col className="experience-col">
-                          <Card style={{ width: '20rem' }}>
+                          <Card>
                             <Card.Img variant='top' src={Adrenaline} />
                             <Card.Body>
                               <Card.Title className="card-title">Adrenaline</Card.Title>
@@ -73,7 +74,7 @@ class Tourist extends React.Component {
                           </Card>
                       </Col>
                       <Col className="experience-col">
-                          <Card style={{ width: '20rem', height: 'auto'  }}>
+                          <Card>
                             <Card.Img variant='top' src={Beaches} />
                             <Card.Body>
                               <Card.Title className="center">Beach Bum</Card.Title>
@@ -86,7 +87,7 @@ class Tourist extends React.Component {
                           </Card>
                       </Col>
                       <Col className="experience-col">
-                          <Card style={{ width: '20rem', height: 'auto'  }}>
+                          <Card>
                             <Card.Img variant='top' src={Outdoors} />
                             <Card.Body>
                               <Card.Title className="center">Outdoors</Card.Title>
@@ -98,13 +99,8 @@ class Tourist extends React.Component {
                             </Card.Body>
                           </Card>
                       </Col>
-                    </Row>
-                  </Container>
-                  <br />
-                  <Container>
-                    <Row>
                     <Col className="experience-col">
-                        <Card style={{ width: '20rem', height: 'auto'  }}>
+                        <Card>
                           <Card.Img variant='top' src={Family} />
                           <Card.Body>
                             <Card.Title className="center">Family</Card.Title>
@@ -117,7 +113,7 @@ class Tourist extends React.Component {
                         </Card>
                     </Col>
                     <Col className="experience-col">
-                        <Card style={{ width: '20rem', height: 'auto'  }}>
+                        <Card>
                           <Card.Img variant='top' src={Sporty} />
                           <Card.Body>
                             <Card.Title className="center">Sporty</Card.Title>
@@ -130,7 +126,7 @@ class Tourist extends React.Component {
                         </Card>
                     </Col>
                     <Col className="experience-col">
-                        <Card style={{ width: '20rem', height: 'auto'  }}>
+                        <Card>
                           <Card.Img variant='top' src={Cultural} />
                           <Card.Body>
                             <Card.Title className="center">Cultural</Card.Title>
@@ -142,13 +138,8 @@ class Tourist extends React.Component {
                           </Card.Body>
                         </Card>
                     </Col>
-                    </Row>
-                  </Container>
-                  <br />
-                  <Container>
-                    <Row>
                     <Col className="experience-col">
-                        <Card style={{ width: '20rem', height: 'auto'  }}>
+                        <Card>
                           <Card.Img variant='top' src={Fashionista} />
                           <Card.Body>
                             <Card.Title className="center">Fashionista</Card.Title>
@@ -161,7 +152,7 @@ class Tourist extends React.Component {
                         </Card>
                     </Col>
                     <Col className="experience-col">
-                        <Card style={{ width: '20rem', height: 'auto'  }}>
+                        <Card>
                           <Card.Img variant='top' src={LGBT} />
                           <Card.Body>
                             <Card.Title className="center">LGBTQ</Card.Title>
@@ -174,7 +165,7 @@ class Tourist extends React.Component {
                         </Card>
                     </Col>
                     <Col className="experience-col">
-                        <Card style={{ width: '20rem', height: 'auto'  }}>
+                        <Card>
                           <Card.Img variant='top' src={Foodie} />
                           <Card.Body>
                             <Card.Title className="center">Foodie</Card.Title>
@@ -191,7 +182,7 @@ class Tourist extends React.Component {
             </section>
             <div className="create-section-background">
                 <section className="section-padding">
-                <img className="homepage-bridge-photo" src={AboutSanDiego} alt='San Diego Skyline and Coronado Bridge' />
+                <Picture src={AboutSanDiego} class="responsive" alt='San Diego Skyline and Coronado Bridge' />
                 <br />
                 <br />
                 <br />
