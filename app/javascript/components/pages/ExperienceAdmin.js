@@ -68,6 +68,7 @@ class ExperienceAdmin extends React.Component {
                         <Modal.Title>{experience.experience_name}</Modal.Title>
                     </Modal.Header>
 
+
                     <Modal.Body>
                         <p>Experience Type: {experience.experience_type}</p>
                         <p>Experience Sub-type: {experience.experience_sub_type}</p>
@@ -77,6 +78,7 @@ class ExperienceAdmin extends React.Component {
                         <p>Phone Number: {experience.phone_number}</p>
                         <p>Hours: {experience.hours}</p>
                     </Modal.Body>
+
 
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.modalCloseView}>Close</Button>
