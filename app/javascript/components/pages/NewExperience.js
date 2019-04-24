@@ -52,7 +52,7 @@ class NewExperience extends React.Component {
             <h1>Enter New Experience Here</h1>
         <Form>
             <Form.Group controlId="">
-                <Form.Label>Experience Name:</Form.Label>
+                <Form.Label>Experience Name: </Form.Label>
                     <Form.Control
                     name="experience_name"
                     onChange={this.handleChange}
@@ -61,14 +61,14 @@ class NewExperience extends React.Component {
                     />
             </Form.Group><br/>
             <Form.Group controlId="">
-                <Form.Label>Experience Type:</Form.Label>
+                <Form.Label>Experience Type: </Form.Label>
                     <Form.Control
                     name="experience_type"
                     onChange = {this.handleChange}
                     as="select"
                     defaultValue={'DEFAULT'}>
                         <option value="DEFAULT" disabled>Choose An Experience Type</option>
-                        <option>Adventerous</option>
+                        <option>Adrenaline</option>
                         <option>Foodie</option>
                         <option>Beach Bum</option>
                         <option>Family</option>
@@ -80,7 +80,7 @@ class NewExperience extends React.Component {
                     </Form.Control>
             </Form.Group><br/>
             <Form.Group controlId="">
-                <Form.Label>Experience Sub-Type:</Form.Label>
+                <Form.Label>Experience Sub-Type: </Form.Label>
                     <Form.Control
                     name="experience_sub_type"
                     onChange = {this.handleChange}
@@ -94,7 +94,7 @@ class NewExperience extends React.Component {
                     </Form.Control>
             </Form.Group><br/>
             <Form.Group controlId="">
-                <Form.Label>Experience Description:</Form.Label>
+                <Form.Label>Experience Description: </Form.Label>
                     <Form.Control
                     name="experience_description"
                     placeholder="Enter Description"
@@ -102,7 +102,7 @@ class NewExperience extends React.Component {
                     as="textarea"/>
             </Form.Group><br/>
             <Form.Group controlId="">
-                <Form.Label>Address:</Form.Label>
+                <Form.Label>Address: </Form.Label>
                     <Form.Control
                     name="address"
                     onChange = {this.handleChange}
@@ -110,7 +110,7 @@ class NewExperience extends React.Component {
                     placeholder="Enter Address"/>
             </Form.Group><br/>
             <Form.Group controlId="">
-                <Form.Label>Website:</Form.Label>
+                <Form.Label>Website: </Form.Label>
                     <Form.Control
                     name="website"
                     onChange = {this.handleChange}
@@ -118,7 +118,7 @@ class NewExperience extends React.Component {
                     placeholder="Enter Website"/>
             </Form.Group><br/>
             <Form.Group controlId="">
-                <Form.Label>Phone Number:</Form.Label>
+                <Form.Label>Phone Number: </Form.Label>
                     <Form.Control
                     name="phone_number"
                     onChange = {this.handleChange}
@@ -126,7 +126,7 @@ class NewExperience extends React.Component {
                     placeholder="Enter Phone Number"/>
             </Form.Group><br/>
             <Form.Group controlId="">
-                <Form.Label>Hours of Operation:</Form.Label>
+                <Form.Label>Hours of Operation: </Form.Label>
                     <Form.Control
                     name="hours"
                     onChange = {this.handleChange}

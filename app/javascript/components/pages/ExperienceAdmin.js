@@ -54,13 +54,13 @@ class ExperienceAdmin extends React.Component {
                   </Modal.Header>
 
                   <Modal.Body>
-                    <p>Experience Type:{experience.experience_type}</p>
-                    <p>Experience Sub-type:{experience.experience_sub_type}</p>
-                    <p>Description:{experience.experience_description}</p>
-                    <p>Address:{experience.address}</p>
-                    <p>Website:{experience.website}</p>
-                    <p>Phone Number{experience.phone_number}</p>
-                    <p>Hours{experience.hours}</p>
+                    <p>Experience Type: {experience.experience_type}</p>
+                    <p>Experience Sub-type: {experience.experience_sub_type}</p>
+                    <p>Description: {experience.experience_description}</p>
+                    <p>Address: {experience.address}</p>
+                    <p>Website: {experience.website}</p>
+                    <p>Phone Number: {experience.phone_number}</p>
+                    <p>Hours: {experience.hours}</p>
                   </Modal.Body>
 
                   <Modal.Footer>

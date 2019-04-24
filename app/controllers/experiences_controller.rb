@@ -1,37 +1,36 @@
 class ExperiencesController < ActionController::API
 
     def index
-        exp = Experience.all.order("created_at DESC")
-        render json: exp
+        @exp = Experience.all.order("created_at DESC")
     end
 
     def create
-        exp = Experience.create(experience_params)
+        @exp = Experience.create(experience_params)
         if exp.save
-            render json: exp
+            render json: @exp
         else
-            render json: exp.errors, status: :unprocessable_entity
+            render json: @exp.errors, status: :unprocessable_entity
         end
     end
 
     def edit
-      exp = Experience.find(params[:id])
+      @exp = Experience.find(params[:id])
     end
 
     def update
-      exp = Experience.find(params[:id])
+      @exp = Experience.find(params[:id])
         if exp.update_attributes(experience_params)
-          render json: exp
+          render json: @exp
         else
-          render json: exp.errors, status: :unprocessable_entity
+          render json: @exp.errors, status: :unprocessable_entity
         end
     end
 
     def destroy
-        exp = Experience.destroy(params[:id])
-        exps = Experience.all
+        @exp = Experience.destroy(params[:id])
+        @exps = Experience.all
 
-      render json: exps
+      render json: @exps
     end
 
     private

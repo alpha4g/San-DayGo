@@ -14,7 +14,7 @@ class TouristApp extends React.Component {
     return (
       <Router>
         <React.Fragment>
-          <Route exact path="/itinerary" component={Itinerary} />
+          <Route exact path="/itinerary/:experience_type" component={Itinerary} />
           <Route exact path="/" component={Tourist} />
         </React.Fragment>
       </Router>
