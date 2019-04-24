@@ -17,7 +17,8 @@
 
 * {
      font-family: 'Roboto', sans-serif;
-     font-size: 1.15rem;
+     font-size: 1.1rem;
+     color: #868687;
  }
 
 h1 {
@@ -28,28 +29,84 @@ h1 {
 
 h2 {
     font-family: 'Fjalla One';
-    font-size: 2.5rem;
+    font-size: 3.75rem;
     text-align: center;
     color: #faa431;
 }
 
 h3 {
     font-family: 'Fjalla One';
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
+    color: #faa431;
 }
 
 h4 {
     font-family: 'Fjalla One';
     font-size: 1rem;
     text-align: center;
+    color: #faa431;
 }
 
 .tourist-image {
     height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.experience-col {
+    width: 200px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.section-padding {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.create-section-background {
+    background-color: #375a93;
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 100%;
+}
+
+.white-h2-title {
+    color: #ffffff;
+}
+
+.white-p-font {
+    color: #ffffff;
+}
+
+.homepage-bridge-photo {
+    margin: auto;
+}
+
+.welcome-text-orange {
+    font-family: 'Fjalla One';
+    font-size: 6.0rem;
+    color: #faa431;
+}
+
+.welcome-text-blue {
+    font-family: 'Fjalla One';
+    font-size: 6.0rem;
+    color: #375a93;
+}
+
+.center {
+    text-align: center;
+}
+
+.card-title {
+    font-family: 'Fjalla One';
+    font-size: 2rem;
+    text-align: center;
+    color: #faa431;
 }
