@@ -2,8 +2,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
 import MainImage from '../../images/SanDayGo-Header-Background.jpg';
+import Adrenaline from '../../images/Adrenaline.jpg'
+import Beaches from '../../images/Beaches.jpg'
+import Cultural from '../../images/Cultural.jpg'
+import Family from '../../images/Family.jpg'
+import Fashionista from '../../images/Fashionista.jpg'
+import Foodie from '../../images/Foodie.jpg'
 import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
-import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
+import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
+import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
+import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
 import {
   Container,
   Row,
