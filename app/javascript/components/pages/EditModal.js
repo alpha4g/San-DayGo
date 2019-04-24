@@ -71,8 +71,12 @@ class EditModal extends Component {
     modalClose = () =>
     this.setState({
         modalShow: false
+<<<<<<< HEAD
     })
 
+=======
+    });
+>>>>>>> master
 
     render() {
         return (
@@ -95,6 +99,7 @@ class EditModal extends Component {
                     </Form>
                   </Modal.Body>
 
+<<<<<<< HEAD
                     <Modal.Footer>
                         <Button onClick={this.modalClose} variant="secondary"> Close </Button>
                         <Button type="button" className="btn btn-primary" data-dismiss="modal" onClick={this.handleSave}> Save Changes </Button>
@@ -102,6 +107,13 @@ class EditModal extends Component {
 
                 </Modal>
 
+=======
+                  <Modal.Footer>
+                    <Button onClick={this.modalClose} variant="secondary">Close</Button>
+                    <Button type="button" className="btn btn-primary" data-dismiss="modal" onClick={this.handleSave}>Save changes</Button>
+                  </Modal.Footer>
+                </Modal.Dialog>;
+>>>>>>> master
             </React.Fragment>
         )
     }

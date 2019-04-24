@@ -49,12 +49,29 @@ class ExperienceAdmin extends React.Component {
                 <span><button onClick={() => this.delete(experience.id)}> Delete </button></span>
                 </p>
 
+<<<<<<< HEAD
                 { this.state.modalShow ? <div onClick={this.modalClose} className="back-drop"></div> : null }
 
                 <Modal className="modal" show = {this.state.modalShow} >
                     <Modal.Header>
                         <Modal.Title>{experience.experience_name}</Modal.Title>
                     </Modal.Header>
+=======
+                <p>Experience Name: {experience.experience_name}</p>
+                <p>Experience Type: {experience.experience_type}</p>
+                <br/>
+                <br/>
+                <p><button onClick={this.modalOpen}>View Details</button></p>
+                <p><button onClick={this.modalEdit}>Edit Info</button></p>
+                <p><button onClick={() => this.delete(experience.id)}>Delete</button></p>
+
+                { this.state.modalShow ? <div onClick={this.modalClose} className="back-drop"></div> : null }
+
+                <Modal className="modal" show = {this.state.modalShow} close={this.modalClose}>
+                  <Modal.Header>
+                    <Modal.Title>{experience.experience_name}</Modal.Title>
+                  </Modal.Header>
+>>>>>>> master
 
                     <Modal.Body>
                         <p>Experience Type: {experience.experience_type}</p>
