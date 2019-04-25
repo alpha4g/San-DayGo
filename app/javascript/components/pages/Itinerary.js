@@ -51,14 +51,13 @@ class Itinerary extends React.Component {
       const{ match } = this.props
       const { experiences } = this.state
       const exp = experiences.filter((experience) => {
-        console.log(match.params.experience_type);
         return experience.experience_type === match.params.experience_type
       })
       const daytime = experiences.filter((experience) => {
         return experience.experience_sub_type === "Day Activity"
       })
       const nighttime = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Night Activity "
+        return experience.experience_sub_type === "Night Activity"
       })
       const restaurant = experiences.filter((experience) => {
         return experience.experience_sub_type === "Restaraunt $" || experience.experience_sub_type === "Restaurant $$" || experience.experience_sub_type === "Restaurant $$$"
@@ -71,10 +70,10 @@ class Itinerary extends React.Component {
             <ul>
               {daytime.map((experience, index) => {
                 return(
-                  <li key={index}>
-                   Name: {experience.experience_name}<br/>
-                   Description: {experience.experience_description}
-                  </li>
+                    <li key={index}>
+                     Name: {experience.experience_name}<br/>
+                     Description: {experience.experience_description}
+                    </li>
                 )
               })}
             </ul>
@@ -85,10 +84,10 @@ class Itinerary extends React.Component {
             <ul>
               {restaurant.map((experience, index) => {
                 return(
-                  <li key={index}>
-                    Name: {experience.experience_name}<br/>
-                    Description: {experience.experience_description}
-                  </li>
+                    <li key={index}>
+                     Name: {experience.experience_name}<br/>
+                     Description: {experience.experience_description}
+                    </li>
                 )
               })}
             </ul>
@@ -99,10 +98,10 @@ class Itinerary extends React.Component {
           <ul>
             {nighttime.map((experience, index) => {
               return(
-                <li key={index}>
-                  Name: {experience.experience_name}<br/>
-                  Description: {experience.experience_description}
-                </li>
+                  <li key={index}>
+                   Name: {experience.experience_name}<br/>
+                   Description: {experience.experience_description}
+                  </li>
               )
             })}
           </ul>
