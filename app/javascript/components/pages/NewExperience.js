@@ -38,11 +38,11 @@ class NewExperience extends React.Component {
     handleChange = (event) => {
         let { form } = this.state
         form[event.target.name] = event.target.value
-        this.setState({form: form})
+        this.setState({form: form});
     }
 
     handleSubmit = () => {
-        this.createExperience(this.state.form)
+        this.createExperience(this.state.form);
     }
 
   render () {
@@ -55,7 +55,7 @@ class NewExperience extends React.Component {
                 <Form.Label>Experience Name: </Form.Label>
                     <Form.Control
                     name="experience_name"
-                    onChange={this.handleChange}
+                    required onChange={this.handleChange}
                     type="text"
                     placeholder="Experience Name"
                     />
