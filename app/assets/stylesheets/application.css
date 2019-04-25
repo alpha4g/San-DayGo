@@ -53,6 +53,11 @@ h4 {
     letter-spacing: -1px;
 }
 
+h6 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .tourist-image {
     height: 100%;
     background-position: center;
@@ -81,9 +86,25 @@ h4 {
     margin-bottom: 20px;
 }
 
-.create-section-background {
+.section-background-darkblue {
     background-color: #1b75bc;
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 100%;
+}
 
+.section-background-lightblue {
+    background-color: #42B5e8;
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 100%;
+    opacity: 50%;
+}
+
+.section-background-orange {
+    background-color: #faa431;
     background-position: center;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -108,6 +129,11 @@ h4 {
     text-align: center;
 }
 
+.white-font {
+    color: #ffffff;
+    list-style-type: none;
+}
+
 .welcome-text-orange {
     font-family: 'Fjalla One';
     font-size: 6.0rem;
@@ -122,6 +148,18 @@ h4 {
     color: #1b75bc;
     letter-spacing: -4px;
     line-height: 6rem;
+}
+
+.intinerary-text-blue {
+    font-family: 'Fjalla One';
+    font-size: 5.0rem;
+    color: #1b75bc;
+    letter-spacing: -4px;
+    line-height: 6rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .center {
@@ -143,10 +181,16 @@ h4 {
     width: 100%;
 }
 
+.button:hover {
+    background-color: #42B5e8;
+    border-color: #42B5e8;
+}
+
 .card-text {
     text-align: center;
     line-height: 1.5rem;
 }
+
  .light-blue-background {
      background-color: #dbf0fc;
      background-position: center;
@@ -159,19 +203,54 @@ h4 {
      margin: auto;
      padding: 10px;
      align-self: center;
-     /* display: flex;
-     justify-content: space-around;
-     flex-flow: row wrap;
-     padding: 0px;
-     margin: 0px;
-     list-style: none;
-     display: -webkit-box;
-     display: -moz-box;
-     display: -ms-flexbox;
-     -webkit-flex-flow: row wrap; */
  }
 
 .responsive {
     width: 100%;
     height: auto;
+}
+
+/* DEVISE PAGES */
+
+.field {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-field {
+    width: 400px;
+    padding: 6px 10px;
+}
+
+.actions {
+    text-align: center;
+    padding: 10px;
+}
+
+.actions-button {
+    margin: auto;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    color: white;
+    padding: 10px 75px;
+    border-radius: 5px;
+}
+
+.actions-button:hover {
+    background-color: #42B5e8;
+    border-color: #42B5e8;
+}
+
+.actions-links {
+    text-align: center;
+    padding: 10px;
+}
+
+.devise-links {
+    color: #faa431;
+}
+
+.devise-links:hover {
+    color: #1b75bc;
 }
