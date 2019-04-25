@@ -9,6 +9,7 @@ class EditModal extends Component {
         super(props)
         this.state = {
             form: {
+                id:this.props.experience.id,
                experience_name:this.props.experience.experience_name,
                experience_type: this.props.experience.experience_type,
                experience_sub_type: this.props.experience.experience_sub_type,
@@ -22,17 +23,19 @@ class EditModal extends Component {
         }
     }
     editExperience = (experience) => {
-        return fetch(`http://localhost:3000/experiences/${id}/edit`, {
+        console.log(experience)
+        return fetch(`http://localhost:3000/experiences/${experience.id}`, {
             body: JSON.stringify({experience}),
             headers: {
                 'Content-Type' : 'application/json'
             },
-            method: "POST"
+            method: "PATCH"
         })
         .then((resp) => {
             let json = resp.json()
-            console.log(json);
+
                 return json
+
         })
     }
 
@@ -43,14 +46,18 @@ class EditModal extends Component {
     }
 
     handleEdit = () => {
-          this.props.edit(this.state.experience, this.props.id)
+        let { form } = this.state
+        // let tempform = this.state.form
+        // this.setState({form: tempform})
+        this.editExperience(form).then((resp) => {this.setState({form:resp})
+        })
       }
 
 
 
     render() {
         let  {form} = this.state
-
+console.log(this.state);
         return (
             <div>
                 <Modal show={this.props.modalEditShow} onHide={this.modalClose}>
@@ -85,7 +92,7 @@ class EditModal extends Component {
 
                     <Modal.Footer>
                         <Button onClick={this.props.modalClose} variant="secondary"> Close </Button>
-                        <Button id="submit" type="submit"  className="btn btn-primary" data-dismiss="modal" onClick={this.props.handleEdit}> Save Changes </Button>
+                        <Button id="submit" type="submit"  className="btn btn-primary" data-dismiss="modal" onClick={this.handleEdit}> Save Changes </Button>
                     </Modal.Footer>
 
                 </Modal>
