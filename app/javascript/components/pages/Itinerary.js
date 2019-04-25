@@ -8,8 +8,7 @@ class Itinerary extends React.Component {
     super(props)
     const{ match } = this.props
     this.state = {
-      experiences: [],
-      experience_name: ""
+      experiences: []
     }
   }
 
@@ -39,7 +38,7 @@ class Itinerary extends React.Component {
       console.log("Error", e)
     })
   }
-// this.props.match.params.experience_id (this needs to happen in order to be propped over)
+
   componentDidUpdate = (prevProps) => {
     const prevMatch = prevProps.match
     const { match } = this.props
@@ -47,8 +46,9 @@ class Itinerary extends React.Component {
       this.setState({experiences: match.params.experience_type})
     }
   }
-
+//this.props.params.experience.id
   render () {
+      const{ match } = this.props
       const { experiences } = this.state
       const daytime = experiences.filter((experience) => {
         return experience.experience_sub_type === "Daytime Activities"
@@ -60,9 +60,10 @@ class Itinerary extends React.Component {
         return experience.experience_sub_type === "Restaraunt $" || experience.experience_sub_type === "Restaurant $$" || experience.experience_sub_type === "Restaurant $$$"
       })
       console.log(this.state)
+      console.log(this.props);
     return (
       <React.Fragment>
-        <section><h1>Here Is Your {experiences.experience_name} Itinerary</h1></section><hr/>
+        <section><h1>Here Is Your {match.params.experience_type} Itinerary</h1></section><hr/>
         <section>
           <h1>Day Time Activities</h1>
             <ul>
