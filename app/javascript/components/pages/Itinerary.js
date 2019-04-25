@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
-import Button from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
 
 class Itinerary extends React.Component {
   constructor(props){
@@ -27,7 +27,7 @@ class Itinerary extends React.Component {
   }
 
   componentDidMount = () => {
-      fetch('http://localhost:3000/experiences.json')
+      fetch(`http://localhost:3000/experiences.json?type=${this.props.match.params.experience_type}`)
       .then((response) => {
         return response.json()
       })
@@ -46,21 +46,23 @@ class Itinerary extends React.Component {
       this.setState({experiences: match.params.experience_type})
     }
   }
-//this.props.params.experience.id
+
   render () {
       const{ match } = this.props
       const { experiences } = this.state
+      const exp = experiences.filter((experience) => {
+        console.log(match.params.experience_type);
+        return experience.experience_type === match.params.experience_type
+      })
       const daytime = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Daytime Activities"
+        return experience.experience_sub_type === "Day Activity"
       })
       const nighttime = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Nighttime Activities"
+        return experience.experience_sub_type === "Night Activity "
       })
       const restaurant = experiences.filter((experience) => {
         return experience.experience_sub_type === "Restaraunt $" || experience.experience_sub_type === "Restaurant $$" || experience.experience_sub_type === "Restaurant $$$"
       })
-      console.log(this.state)
-      console.log(this.props);
     return (
       <React.Fragment>
         <section><h1>Here Is Your {match.params.experience_type} Itinerary</h1></section><hr/>

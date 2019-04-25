@@ -1,8 +1,12 @@
 class ExperiencesController < ActionController::API
 
     def index
+      if params[:type]
+        @exp = Experience.where(:experience_type => params[:type])
+      else
         @exp = Experience.all.order("created_at DESC")
         render json: @exp
+      end 
     end
 
     def create
@@ -29,7 +33,7 @@ class ExperiencesController < ActionController::API
 
     def destroy
         @exp = Experience.destroy(params[:id])
-        @exps = Experience.all
+        @exps = Experience.all.order("created_at DESC")
 
       render json: @exps
     end
