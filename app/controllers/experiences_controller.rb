@@ -1,8 +1,12 @@
 class ExperiencesController < ActionController::API
 
     def index
+      if params[:type]
+        @exp = Experience.where(:experience_type => params[:type])
+      else
         @exp = Experience.all.order("created_at DESC")
         render json: @exp
+      end 
     end
 
     def create
@@ -20,7 +24,7 @@ class ExperiencesController < ActionController::API
 
     def update
       @exp = Experience.find(params[:id])
-        if exp.update_attributes(experience_params)
+        if @exp.update_attributes(experience_params)
           render json: @exp
         else
           render json: @exp.errors, status: :unprocessable_entity
@@ -29,7 +33,7 @@ class ExperiencesController < ActionController::API
 
     def destroy
         @exp = Experience.destroy(params[:id])
-        @exps = Experience.all
+        @exps = Experience.all.order("created_at DESC")
 
       render json: @exps
     end
