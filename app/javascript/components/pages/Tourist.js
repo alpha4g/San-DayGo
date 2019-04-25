@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
+
 import MainImage from '../../images/Landing-Page-Header.png';
-import GenericImage from '../../images/Experience-Placeholder-Image.jpg'
+import GenericImage from '../../images/Experience-Placeholder.jpg'
 import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
 import AboutSanDiego from '../../images/San-Diego-About.jpg'
 import Adrenaline from '../../images/Adrenaline.jpg'
@@ -14,7 +15,7 @@ import Foodie from '../../images/Foodie.jpg'
 import LGBT from '../../images/LGBT.jpg'
 import Outdoors from '../../images/Outdoors.jpg'
 import Sporty from '../../images/Sporty.jpg'
-import { Picture } from 'react-responsive-picture';
+import {Picture} from 'react-responsive-picture';
 import TourismLogo from '../../images/SDTourism-Logo.jpg'
 import SDPlan from '../../images/San-Daygo-Plan.jpg'
 
@@ -50,7 +51,7 @@ class Tourist extends React.Component {
                 <br />
                 <h3 className="center">ENJOY YOUR DAY ON-THE-GO RIGHT HERE IN SAN DIEGO</h3>
             </section>
-            <div className="create-section-background">
+            <div className="section-background-darkblue">
                 <section className="section-padding">
                 <Picture src={SDPlan} className="responsive" alt='Old Town Trolley and Cassa Del Prado' />
                 <br />
@@ -75,7 +76,7 @@ class Tourist extends React.Component {
                               <Card.Text className="center">
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/Adrenaline">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/Adrenaline"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                               <br />
                             </Card.Body>
                           </Card>
@@ -88,7 +89,7 @@ class Tourist extends React.Component {
                               <Card.Text className="center">
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/BeachBum">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/BeachBum"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                               <br />
                             </Card.Body>
                           </Card>
@@ -101,7 +102,7 @@ class Tourist extends React.Component {
                               <Card.Text className="center">
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/Outdoors">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/Outdoors"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                               <br />
                             </Card.Body>
                           </Card>
@@ -114,7 +115,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/Family">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/Family"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
                           </Card.Body>
                         </Card>
@@ -127,7 +128,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/Sporty">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/Sporty"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
                           </Card.Body>
                         </Card>
@@ -140,7 +141,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/Cultural">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/Cultural"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
                           </Card.Body>
                         </Card>
@@ -153,7 +154,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/Fashionista">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/Fashionista"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
                           </Card.Body>
                         </Card>
@@ -166,7 +167,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/LGBTQ">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/LGBTQ"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
                           </Card.Body>
                         </Card>
@@ -179,7 +180,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Experience the adreniline rush with a day filled with high-energy experiences.
                             </Card.Text>
-                              <Button className="button" variant="primary"><Link to="/itinerary/Foodie">Create Itinerary</Link></Button>
+                              <Link to="/itinerary/Foodie"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
                           </Card.Body>
                         </Card>
@@ -187,7 +188,7 @@ class Tourist extends React.Component {
                     </Row>
                   </Container>
             </section>
-            <div className="create-section-background">
+            <div className="section-background-darkblue">
                 <section className="section-padding">
                     <Picture src={TourismLogo} className="responsive" alt='Beach Image with San Diego Tourism Logo' />
                     <br />

@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
 import Button from 'react-bootstrap'
+import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
+import ExperiencePlaceholder from '../../images/Experience-Placeholder.jpg'
 
 class Itinerary extends React.Component {
   constructor(props){
@@ -63,48 +65,64 @@ class Itinerary extends React.Component {
       console.log(this.props);
     return (
       <React.Fragment>
-        <section><h1>Here Is Your {match.params.experience_type} Itinerary</h1></section><hr/>
         <section>
-          <h1>Day Time Activities</h1>
-            <ul>
-              {daytime.map((experience, index) => {
-                return(
-                  <li key={index}>
-                   Name: {experience.experience_name}<br/>
-                   Description: {experience.experience_description}
-                  </li>
-                )
-              })}
-            </ul>
+            <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
+            <h1 className='intinerary-text-blue'>Enjoy Your {match.params.experience_type} Itinerary</h1>
         </section>
-        <section>
-        <hr/>
-          <h1>Suggested Restaurants</h1>
-            <ul>
-              {restaurant.map((experience, index) => {
-                return(
-                  <li key={index}>
-                    Name: {experience.experience_name}<br/>
-                    Description: {experience.experience_description}
-                  </li>
-                )
-              })}
-            </ul>
-        </section>
-        <section>
-        <hr/>
-          <h1>Nighttime Activities</h1>
-          <ul>
-            {nighttime.map((experience, index) => {
-              return(
-                <li key={index}>
-                  Name: {experience.experience_name}<br/>
-                  Description: {experience.experience_description}
-                </li>
-              )
-            })}
-          </ul>
-        </section>
+        <div className="section-background-orange">
+            <section className="section-padding">
+              <h2 className="white-h2-title">DAYTIME ACTIVITES</h2>
+              <br />
+                <ul>
+                <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
+                <br />
+                <br />
+                  {daytime.map((experience, index) => {
+                    return(
+                      <li className="white-font" key={index}>
+                       Name: {experience.experience_name} Description: {experience.experience_description}
+                      </li>
+                    )
+                  })}
+                </ul>
+            </section>
+        </div>
+        <div className="section-background-lightblue">
+            <section className="section-padding">
+              <h2 className="white-h2-title">SUGGESTED RESTAURANTS</h2>
+              <br />
+                <ul>
+                <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
+                <br />
+                <br />
+                  {restaurant.map((experience, index) => {
+                    return(
+                      <li className="white-font" key={index}>
+                        Name: {experience.experience_name}  Description: {experience.experience_description}
+                      </li>
+                    )
+                  })}
+                </ul>
+            </section>
+        </div>
+        <div className="section-background-darkblue">
+            <section className="section-padding">
+              <h2 className="white-h2-title">NIGHTTIME ACTIVITIES</h2>
+              <br />
+              <ul>
+              <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
+              <br />
+              <br />
+                {nighttime.map((experience, index) => {
+                  return(
+                    <li className="white-font" key={index}>
+                      Name: {experience.experience_name}  Description: {experience.experience_description}
+                    </li>
+                  )
+                })}
+              </ul>
+            </section>
+        </div>
         <Link to="/">Back</Link>
       </React.Fragment>
     );
