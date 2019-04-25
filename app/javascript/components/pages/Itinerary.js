@@ -8,8 +8,7 @@ class Itinerary extends React.Component {
     super(props)
     const{ match } = this.props
     this.state = {
-      experiences: [],
-      experience_name: ""
+      experiences: []
     }
   }
 

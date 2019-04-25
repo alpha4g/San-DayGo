@@ -15,6 +15,8 @@ import LGBT from '../../images/LGBT.jpg'
 import Outdoors from '../../images/Outdoors.jpg'
 import Sporty from '../../images/Sporty.jpg'
 import { Picture } from 'react-responsive-picture';
+import TourismLogo from '../../images/SDTourism-Logo.jpg'
+import SDPlan from '../../images/San-Daygo-Plan.jpg'
 
 
 import {
@@ -35,7 +37,10 @@ class Tourist extends React.Component {
         </div>
             <section className="section-padding">
               <p className="center">
-
+              <Picture src={AboutSanDiego} className="responsive" alt='San Diego Skyline' />
+              <br />
+              <br />
+              <br />
               <span className="welcome-text-blue">WELCOME TO</span><span>&nbsp;</span><span className="welcome-text-orange">SAN</span><span className="welcome-text-blue">DAY</span><span className="welcome-text-orange">GO</span><span className="welcome-text-blue">!</span>
 
               </p>
@@ -47,7 +52,7 @@ class Tourist extends React.Component {
             </section>
             <div className="create-section-background">
                 <section className="section-padding">
-                <Picture src={AboutSanDiego} className="responsive" alt='San Diego Skyline and Coronado Bridge' />
+                <Picture src={SDPlan} className="responsive" alt='Old Town Trolley and Cassa Del Prado' />
                 <br />
                 <br />
                 <br />
@@ -184,13 +189,18 @@ class Tourist extends React.Component {
             </section>
             <div className="create-section-background">
                 <section className="section-padding">
-                <Picture src={AboutSanDiego} className="responsive" alt='San Diego Skyline and Coronado Bridge' />
-                <br />
-                <br />
-                <br />
-                <h2 className="white-h2-title">ABOUT THE GREATER SAN DIEGO TOURIST BUREAU</h2>
+                    <Picture src={TourismLogo} className="responsive" alt='Beach Image with San Diego Tourism Logo' />
                     <br />
-                    <p className="white-p-font">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    <br />
+                    <br />
+                    <h2 className="white-h2-title">ABOUT THE SAN DIEGO BUREAU OF TOURISM</h2>
+                    <br />
+                    <p className="white-p-font">The San Diego Bureau of Tourism's mission is to drive visitor demand to economically benefit the San Diego region. Tourism is the second largest segment of San Diego's economy and employs approximately 194,000 people.</p>
+                    <p className="white-p-font">The San Diego Bureau of Tourism is a private, non-profit, mutual benefit corporation composed of approximately 1,000 member organizations, businesses, local governments, and individuals seeking a better community through the visitor industry. The San Diego Bureau of Tourism members include tourism-related entities in such categories as lodging, dining, arts, attractions, shopping, and transportation, among others, as well as other companies indirectly involved in tourism.</p>
+                    <br />
+                    <h3 className="white-p-font">DISCOVER SAN DIEGO WITH THIS VIDEO FROM OUR FRIENDS AT EXPEDIA</h3>
+                    <br />
+                    <iframe width="100%" height="880px" src="https://www.youtube.com/embed/-KMZW_zwRfc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </section>
             </div>
             <div className="footer-background">
