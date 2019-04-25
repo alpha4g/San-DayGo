@@ -59,7 +59,7 @@ class ExperienceAdmins extends React.Component {
                 <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index}/>
                 )}
                 {this.state.experiences.map((experience, index) =>
-                <EditModal experience={experience} index={index} key={index}/>
+                <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index}/>
                 )}
 
 
