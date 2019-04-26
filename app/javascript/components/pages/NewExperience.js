@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Form, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
+import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
+
 
 class NewExperience extends React.Component {
     constructor(props){
@@ -53,7 +55,10 @@ class NewExperience extends React.Component {
       let { form } = this.state
     return (
     <React.Fragment>
-            <h1>Enter New Experience Here</h1>
+    <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
+    <div className="section-padding">
+            <h2>ENTER NEW EXPERIENCE</h2>
+            <br/>
         <Form>
             <Form.Group controlId="">
                 <Form.Label>Experience Name: </Form.Label>
@@ -61,7 +66,6 @@ class NewExperience extends React.Component {
                     name="experience_name"
                     required onChange={this.handleChange}
                     type="text"
-                    placeholder="Experience Name"
                     />
             </Form.Group><br/>
             <Form.Group controlId="">
@@ -71,7 +75,7 @@ class NewExperience extends React.Component {
                     onChange = {this.handleChange}
                     as="select"
                     defaultValue={'DEFAULT'}>
-                        <option value="DEFAULT" disabled>Choose An Experience Type</option>
+                        <option value="DEFAULT" disabled>Choose One</option>
                         <option>Adrenaline</option>
                         <option>Foodie</option>
                         <option>Beach Bum</option>
@@ -89,7 +93,7 @@ class NewExperience extends React.Component {
                     name="experience_sub_type"
                     onChange = {this.handleChange}
                     as="select" defaultValue={'DEFAULT'}>
-                        <option value="DEFAULT" disabled>Choose An Activity</option>
+                        <option value="DEFAULT" disabled>Choose One</option>
                         <option>Day Activity</option>
                         <option>Night Activity</option>
                         <option>Restaurant $</option>
@@ -101,7 +105,6 @@ class NewExperience extends React.Component {
                 <Form.Label>Experience Description: </Form.Label>
                     <Form.Control
                     name="experience_description"
-                    placeholder="Enter Description"
                     onChange = {this.handleChange}
                     as="textarea"/>
             </Form.Group><br/>
@@ -110,32 +113,28 @@ class NewExperience extends React.Component {
                     <Form.Control
                     name="address"
                     onChange = {this.handleChange}
-                    type="text"
-                    placeholder="Enter Address"/>
+                    type="text"/>
             </Form.Group><br/>
             <Form.Group controlId="">
                 <Form.Label>Website: </Form.Label>
                     <Form.Control
                     name="website"
                     onChange = {this.handleChange}
-                    type="text"
-                    placeholder="Enter Website"/>
+                    type="text"/>
             </Form.Group><br/>
             <Form.Group controlId="">
                 <Form.Label>Phone Number: </Form.Label>
                     <Form.Control
                     name="phone_number"
                     onChange = {this.handleChange}
-                    type="text"
-                    placeholder="Enter Phone Number"/>
+                    type="text"/>
             </Form.Group><br/>
             <Form.Group controlId="">
                 <Form.Label>Hours of Operation: </Form.Label>
                     <Form.Control
                     name="hours"
                     onChange = {this.handleChange}
-                    type="text"
-                    placeholder="Enter Hours of Operation"/>
+                    type="text"/>
             </Form.Group><br/>
             <Link to="/admin"
             name="name"
@@ -143,6 +142,7 @@ class NewExperience extends React.Component {
             type="submit">Create The Experience</Link>
         </Form><br/>
         <Link to="/admin">Back</Link>
+        </div>
     </React.Fragment>
 
             );

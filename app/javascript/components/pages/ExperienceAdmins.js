@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import ExperienceAdmin from './ExperienceAdmin'
 import EditModal from './EditModal'
 import AdminApp from '../AdminApp'
+import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
 
 
 
@@ -51,16 +52,20 @@ class ExperienceAdmins extends React.Component {
 
   render () {
     return (
-     <React.Fragment>
 
-            <h1>Admin Page of Experiences</h1>
-
-                {this.state.experiences.map((experience, index) =>
-                <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index}/>
-                )}
-
-        <Link to="/NewExperience">Create New Experience</Link>
-        </React.Fragment>
+    <React.Fragment>
+        <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
+        <div className="section-padding">
+            <h2>ADMIN DASHBOARD</h2>
+            <br/>
+            <Link to="/NewExperience">Create New Experience</Link>
+            <br/>
+            <br/>
+            {this.state.experiences.map((experience, index) =>
+            <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index}/>
+            )}
+        </div>
+    </React.Fragment>
 
         )
     }
