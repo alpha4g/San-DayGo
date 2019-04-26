@@ -75,6 +75,7 @@ class EditModal extends Component {
                             <Form.Label id="experience_type">Experience Type:</Form.Label>
                             <Form.Control
                             name="experience_type"  defaultValue={form.experience_type} onChange={this.handleChange} as="select">
+                                <option>Restaurant</option>
                                 <option>Adrenaline</option>
                                 <option>Foodie</option>
                                 <option>Beach Bum</option>
@@ -93,24 +94,24 @@ class EditModal extends Component {
                                 <option value="DEFAULT" disabled>Choose An Activity</option>
                                 <option>Day Activity</option>
                                 <option>Night Acitivity</option>
-                                <option>Restaurant $</option>
-                                <option>Restaurant $$</option>
-                                <option>Restaurant $$$</option>
+                                <option>$</option>
+                                <option>$$</option>
+                                <option>$$$</option>
                             </Form.Control>
                             <Form.Label id="experience_description">Description:</Form.Label>
-                            <FormControl name="experience_description" type="text" value={form.experience_description} onChange={this.handleChange} />
+                            <FormControl name="experience_description" type="text" defaultValue={form.experience_description} onChange={this.handleChange} />
 
                             <Form.Label id="address">Address:</Form.Label>
-                            <FormControl name="address" type="text" value={form.address} onChange={this.handleChange} />
+                            <FormControl name="address" type="text" defaultValue={form.address} onChange={this.handleChange} />
 
                             <Form.Label id="website">Website:</Form.Label>
-                            <FormControl name="website" type="text" value={form.website} onChange={this.handleChange} />
+                            <FormControl name="website" type="text" defaultValue={form.website} onChange={this.handleChange} />
 
                             <Form.Label id="phone_number">Phone Number:</Form.Label>
-                            <FormControl name="phone_number" type="text" value={form.phone_number} onChange={this.handleChange} />
+                            <FormControl name="phone_number" type="text" defaultValue={form.phone_number} onChange={this.handleChange} />
 
                             <Form.Label id="hours">Hours:</Form.Label>
-                            <FormControl name="hours" type="text" value={form.hours} onChange={this.handleChange} />
+                            <FormControl name="hours" type="text" defaultValue={form.hours} onChange={this.handleChange} />
                         </Form>
                     </Modal.Body>
 
