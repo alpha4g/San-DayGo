@@ -6,12 +6,12 @@ class ExperiencesController < ActionController::API
       else
         @exp = Experience.all.order("created_at DESC")
         render json: @exp
-      end
+      end 
     end
 
     def create
         @exp = Experience.create(experience_params)
-        if @exp.save
+        if exp.save
             render json: @exp
         else
             render json: @exp.errors, status: :unprocessable_entity

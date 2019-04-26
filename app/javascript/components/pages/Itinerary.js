@@ -54,67 +54,23 @@ class Itinerary extends React.Component {
       const{ match } = this.props
       const { experiences } = this.state
       const exp = experiences.filter((experience) => {
+        console.log(match.params.experience_type);
         return experience.experience_type === match.params.experience_type
       })
       const daytime = experiences.filter((experience) => {
-        // experience[Math.floor(Math.random()*experience.length)]
         return experience.experience_sub_type === "Day Activity"
       })
       const nighttime = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Night Activity"
+        return experience.experience_sub_type === "Night Activity "
       })
       const restaurant = experiences.filter((experience) => {
         return experience.experience_sub_type === "Restaraunt $" || experience.experience_sub_type === "Restaurant $$" || experience.experience_sub_type === "Restaurant $$$"
       })
     return (
       <React.Fragment>
-
-        <section><h1>Here Is Your {match.params.experience_type} Itinerary</h1></section><hr/>
-        <section>
-          <h1>Day Time Activities</h1>
-            <ul>
-              {daytime.slice(1,4).map((experience, index) => {
-                return(
-                    <li key={index}>
-                     Name: {experience.experience_name}<br/>
-                     Description: {experience.experience_description}
-                    </li>
-                )
-              })}
-            </ul>
-        </section>
-        <section>
-        <hr/>
-          <h1>Suggested Restaurants</h1>
-            <ul>
-              {restaurant.slice(1,5).map((experience, index) => {
-                return(
-                    <li key={index}>
-                     Name: {experience.experience_name}<br/>
-                     Description: {experience.experience_description}
-                    </li>
-                )
-              })}
-            </ul>
-        </section>
-        <section>
-        <hr/>
-          <h1>Nighttime Activities</h1>
-          <ul>
-            {nighttime.slice(1,4).map((experience, index) => {
-              return(
-                  <li key={index}>
-                   Name: {experience.experience_name}<br/>
-                   Description: {experience.experience_description}
-                  </li>
-              )
-            })}
-          </ul>
-
         <section>
             <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
             <h1 className='intinerary-text-blue'>Enjoy Your {match.params.experience_type} Itinerary</h1>
-
         </section>
         <div className="section-background-orange">
             <section className="section-padding">
