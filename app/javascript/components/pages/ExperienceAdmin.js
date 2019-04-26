@@ -3,6 +3,12 @@ import {
   Modal, Button
 } from 'react-bootstrap'
 import EditModal from './EditModal'
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+} from 'react-bootstrap'
 
 
 class ExperienceAdmin extends React.Component {
@@ -49,17 +55,31 @@ class ExperienceAdmin extends React.Component {
 
         return (
             <div>
-                <p>
-                    <span>Experience Name: {experience.experience_name}  </span>
-                    <span>&nbsp;&nbsp;&nbsp;</span>
-                    <span>Experience Type: {experience.experience_type}  </span>
-                    <span>&nbsp;&nbsp;&nbsp;</span>
-                    <span><button onClick={this.modalOpen}> View Details </button></span>
-                    <span>&nbsp;&nbsp;&nbsp;</span>
-                    <span><button onClick={this.modalEdit}> Edit Info </button></span>
-                    <span>&nbsp;&nbsp;&nbsp;</span>
-                    <span><button onClick={() => this.delete(experience.id)}> Delete </button></span>
-                </p>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-4">
+                      <span>{experience.experience_name}  </span>
+                    </div>
+                    <div className="col-2">
+                      <span>{experience.experience_type}  </span>
+                    </div>
+                    <div className="col-3">
+                      <span>{experience.experience_sub_type}  </span>
+                    </div>
+                    <div className="col-1">
+                      <span><button className="admin-button" onClick={this.modalOpen}>View</button></span>
+                    </div>
+                    <div className="col-1">
+                      <span><button className="admin-button" onClick={this.modalEdit}>Edit</button></span>
+                    </div>
+                    <div className="col-1">
+                      <span><button className="admin-button" onClick={() => this.delete(experience.id)}>Delete</button></span>
+                    </div>
+                  </div>
+                </div>
+                <br className="line-break-spacing"/>
+
+
 
                 <EditModal  experience={experience} id={this.state.id} toggle={this.props.toggleEdit} modalEditShow={this.state.modalEditShow} modalClose={this.modalClose} edit={this.props.edit} />
 

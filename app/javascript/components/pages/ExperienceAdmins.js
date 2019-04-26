@@ -5,7 +5,12 @@ import ExperienceAdmin from './ExperienceAdmin'
 import EditModal from './EditModal'
 import AdminApp from '../AdminApp'
 import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
-
+import {
+  Container,
+  Row,
+  Col,
+  Button
+} from 'react-bootstrap'
 
 
 class ExperienceAdmins extends React.Component {
@@ -57,8 +62,31 @@ class ExperienceAdmins extends React.Component {
         <div className="section-padding">
             <h2>ADMIN DASHBOARD</h2>
             <br/>
-            <Link to="/NewExperience">Create New Experience</Link>
+            <Link to="/NewExperience"><Button className="med-button" variant="primary">Create New Experience</Button></Link>
             <br/>
+            <br/>
+            <div className="container">
+              <div className="row">
+                <div className="col-4">
+                  <span className="experience-label-font">TITLE</span>
+                </div>
+                <div className="col-2">
+                  <span className="experience-label-font">TYPE</span>
+                </div>
+                <div className="col-3">
+                  <span className="experience-label-font">SUB TYPE</span>
+                </div>
+                <div className="col-1">
+                  <span> </span>
+                </div>
+                <div className="col-1">
+                  <span> </span>
+                </div>
+                <div className="col-1">
+                  <span> </span>
+                </div>
+              </div>
+            </div>
             <br/>
             {this.state.experiences.map((experience, index) =>
             <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index}/>

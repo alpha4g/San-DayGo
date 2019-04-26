@@ -1,23 +1,8 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto');
 
 * {
      font-family: 'Roboto', sans-serif;
-     font-size: 1.1rem;
+     font-size: 1.05rem;
      color: #868687;
      letter-spacing: -0.05px;
  }
@@ -186,6 +171,21 @@ h6 {
     border-color: #42B5e8;
 }
 
+.med-button {
+    margin: auto;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.med-button:hover {
+    background-color: #42B5e8;
+    border-color: #42B5e8;
+}
+
+
 .card-text {
     text-align: center;
     line-height: 1.5rem;
@@ -253,4 +253,33 @@ h6 {
 
 .devise-links:hover {
     color: #1b75bc;
+}
+
+.line-break-spacing {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 10%;
+}
+
+.admin-button {
+    margin: auto;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    color: white;
+    padding: 5px;
+    width: 75px;
+    border-radius: 5px;
+}
+
+.admin-button:hover {
+    background-color: #42B5e8;
+    border-color: #42B5e8;
+}
+
+.experience-label-font {
+    font-family: 'Fjalla One';
+    font-size: 1.5rem;
+    text-align: center;
+    color: #faa431;
 }
