@@ -91,7 +91,7 @@ class NewExperience extends React.Component {
                     as="select" defaultValue={'DEFAULT'}>
                         <option value="DEFAULT" disabled>Choose An Activity</option>
                         <option>Day Activity</option>
-                        <option>Night Acitivity</option>
+                        <option>Night Activity</option>
                         <option>Restaurant $</option>
                         <option>Restaurant $$</option>
                         <option>Restaurant $$$</option>
