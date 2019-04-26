@@ -54,6 +54,7 @@ class Itinerary extends React.Component {
         return experience.experience_type === match.params.experience_type
       })
       const daytime = experiences.filter((experience) => {
+        // experience[Math.floor(Math.random()*experience.length)]
         return experience.experience_sub_type === "Day Activity"
       })
       const nighttime = experiences.filter((experience) => {
@@ -68,7 +69,7 @@ class Itinerary extends React.Component {
         <section>
           <h1>Day Time Activities</h1>
             <ul>
-              {daytime.map((experience, index) => {
+              {daytime.slice(1,4).map((experience, index) => {
                 return(
                     <li key={index}>
                      Name: {experience.experience_name}<br/>
@@ -82,7 +83,7 @@ class Itinerary extends React.Component {
         <hr/>
           <h1>Suggested Restaurants</h1>
             <ul>
-              {restaurant.map((experience, index) => {
+              {restaurant.slice(1,5).map((experience, index) => {
                 return(
                     <li key={index}>
                      Name: {experience.experience_name}<br/>
@@ -96,7 +97,7 @@ class Itinerary extends React.Component {
         <hr/>
           <h1>Nighttime Activities</h1>
           <ul>
-            {nighttime.map((experience, index) => {
+            {nighttime.slice(1,4).map((experience, index) => {
               return(
                   <li key={index}>
                    Name: {experience.experience_name}<br/>
