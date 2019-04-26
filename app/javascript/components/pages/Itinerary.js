@@ -51,6 +51,17 @@ class Itinerary extends React.Component {
     }
   }
 
+  randomArray = (array) => {
+  let i = array.length - 1;
+  for (; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+      }
+    return array;
+  }
+
   render () {
       const{ match } = this.props
       const { experiences } = this.state
@@ -60,13 +71,32 @@ class Itinerary extends React.Component {
       const daytime = experiences.filter((experience) => {
         return experience.experience_sub_type === "Day Activity"
       })
-      // const daytimeRandom = daytime[Math.floor(Math.random()*daytime.length)]
-      const nighttime = experiences.filter((experience) => {
+      const daytimeRandom = this.randomArray(daytime)
+
+
+      const night = experiences.filter((experience) => {
         return experience.experience_sub_type === "Night Activity"
       })
-      const restaurant = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Restaraunt $" || experience.experience_sub_type === "Restaurant $$" || experience.experience_sub_type === "Restaurant $$$"
+      const nightRandom = this.randomArray(night)
+
+
+      const restaurantOne = experiences.filter((experience) => {
+        return experience.experience_sub_type === "Restaurant $"
       })
+      const restRandomOne = this.randomArray(restaurantOne)
+
+
+      const restaurantTwo = experiences.filter((experience) => {
+        return experience.experience_sub_type === "Restaurant $$"
+      })
+      const restRandomTwo = this.randomArray(restaurantTwo)
+
+
+      const restaurantThree = experiences.filter((experience) => {
+        return experience.experience_sub_type === "Restaurant $$$"
+      })
+      const restRandomThree = this.randomArray(restaurantThree)
+
     return (
       <React.Fragment>
         <section>
@@ -82,7 +112,7 @@ class Itinerary extends React.Component {
                 <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
                 <br />
                 <br />
-                  {daytime.slice(0,2).map((experience, index) => {
+                  {daytimeRandom.slice(0,2).map((experience, index) => {
                     return(
                       <li className="white-font" key={index}>
                        Name: {experience.experience_name} Description: {experience.experience_description}
@@ -100,11 +130,28 @@ class Itinerary extends React.Component {
                 <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
                 <br />
                 <br />
-                  {restaurant.slice(0,3).map((experience, index) => {
+                  {restRandomOne.slice(0,1).map((experience, index) => {
                     return(
-                      <li className="white-font" key={index}>
-                        Name: {experience.experience_name}  Description: {experience.experience_description}
-                      </li>
+                    <li className="white-font" key={index}>
+                        Name: {experience.experience_name}
+                        Description: {experience.experience_description}
+                    </li>
+                    )
+                  })}
+                  {restRandomTwo.slice(0,1).map((experience, index) => {
+                    return(
+                    <li className="white-font" key={index}>
+                        Name: {experience.experience_name}
+                        Description: {experience.experience_description}
+                    </li>
+                    )
+                  })}
+                  {restRandomThree.slice(0,1).map((experience, index) => {
+                    return(
+                    <li className="white-font" key={index}>
+                        Name: {experience.experience_name}
+                        Description: {experience.experience_description  }
+                    </li>
                     )
                   })}
                 </ul>
@@ -118,7 +165,7 @@ class Itinerary extends React.Component {
               <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
               <br />
               <br />
-                {nighttime.slice(0,2).map((experience, index) => {
+                {nightRandom.slice(0,2).map((experience, index) => {
                   return(
                     <li className="white-font" key={index}>
                       Name: {experience.experience_name}  Description: {experience.experience_description}
