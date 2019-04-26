@@ -55,14 +55,14 @@ class Itinerary extends React.Component {
       const{ match } = this.props
       const { experiences } = this.state
       const exp = experiences.filter((experience) => {
-        console.log(match.params.experience_type);
         return experience.experience_type === match.params.experience_type
       })
       const daytime = experiences.filter((experience) => {
         return experience.experience_sub_type === "Day Activity"
       })
+      // const daytimeRandom = daytime[Math.floor(Math.random()*daytime.length)]
       const nighttime = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Night Activity "
+        return experience.experience_sub_type === "Night Activity"
       })
       const restaurant = experiences.filter((experience) => {
         return experience.experience_sub_type === "Restaraunt $" || experience.experience_sub_type === "Restaurant $$" || experience.experience_sub_type === "Restaurant $$$"
@@ -72,6 +72,7 @@ class Itinerary extends React.Component {
         <section>
             <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
             <h1 className='intinerary-text-blue'>Enjoy Your {match.params.experience_type} Itinerary</h1>
+
         </section>
         <div className="section-background-orange">
             <section className="section-padding">
@@ -81,7 +82,7 @@ class Itinerary extends React.Component {
                 <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
                 <br />
                 <br />
-                  {daytime.slice(0,3).map((experience, index) => {
+                  {daytime.slice(0,2).map((experience, index) => {
                     return(
                       <li className="white-font" key={index}>
                        Name: {experience.experience_name} Description: {experience.experience_description}
@@ -99,7 +100,7 @@ class Itinerary extends React.Component {
                 <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
                 <br />
                 <br />
-                  {restaurant.slice(0,4).map((experience, index) => {
+                  {restaurant.slice(0,3).map((experience, index) => {
                     return(
                       <li className="white-font" key={index}>
                         Name: {experience.experience_name}  Description: {experience.experience_description}
@@ -117,7 +118,7 @@ class Itinerary extends React.Component {
               <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
               <br />
               <br />
-                {nighttime.slice(0,3).map((experience, index) => {
+                {nighttime.slice(0,2).map((experience, index) => {
                   return(
                     <li className="white-font" key={index}>
                       Name: {experience.experience_name}  Description: {experience.experience_description}
