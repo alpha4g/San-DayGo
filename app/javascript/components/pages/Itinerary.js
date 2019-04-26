@@ -30,6 +30,7 @@ class Itinerary extends React.Component {
   }
 
   componentDidMount = () => {
+      window.scrollTo(0,0)
       fetch(`http://localhost:3000/experiences.json?type=${this.props.match.params.experience_type}`)
       .then((response) => {
         return response.json()
@@ -80,7 +81,7 @@ class Itinerary extends React.Component {
                 <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
                 <br />
                 <br />
-                  {daytime.map((experience, index) => {
+                  {daytime.slice(0,3).map((experience, index) => {
                     return(
                       <li className="white-font" key={index}>
                        Name: {experience.experience_name} Description: {experience.experience_description}
@@ -98,7 +99,7 @@ class Itinerary extends React.Component {
                 <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
                 <br />
                 <br />
-                  {restaurant.map((experience, index) => {
+                  {restaurant.slice(0,4).map((experience, index) => {
                     return(
                       <li className="white-font" key={index}>
                         Name: {experience.experience_name}  Description: {experience.experience_description}
@@ -116,7 +117,7 @@ class Itinerary extends React.Component {
               <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
               <br />
               <br />
-                {nighttime.map((experience, index) => {
+                {nighttime.slice(0,3).map((experience, index) => {
                   return(
                     <li className="white-font" key={index}>
                       Name: {experience.experience_name}  Description: {experience.experience_description}
