@@ -10,14 +10,14 @@ class EditModal extends Component {
         this.state = {
             form: {
                 id:this.props.experience.id,
-               experience_name:this.props.experience.experience_name,
-               experience_type: this.props.experience.experience_type,
-               experience_sub_type: this.props.experience.experience_sub_type,
-               experience_description: this.props.experience.experience_description,
-               address: this.props.experience.address,
-               website: this.props.experience.website,
-               phone_number: this.props.experience.phone_number,
-               hours: this.props.experience.hours,
+                experience_name:this.props.experience.experience_name,
+                experience_type: this.props.experience.experience_type,
+                experience_sub_type: this.props.experience.experience_sub_type,
+                experience_description: this.props.experience.experience_description,
+                address: this.props.experience.address,
+                website: this.props.experience.website,
+                phone_number: this.props.experience.phone_number,
+                hours: this.props.experience.hours,
            },
             modalEditShow:false
         }
@@ -47,32 +47,56 @@ class EditModal extends Component {
 
     handleEdit = () => {
         let { form } = this.state
-        // let tempform = this.state.form
-        // this.setState({form: tempform})
         this.editExperience(form).then((resp) => {this.setState({form:resp})
         })
       }
 
-
+    finalSave =() => {
+        this.handleEdit()
+        this.props.modalClose()
+        history.go(0)
+    }
 
     render() {
         let {form} = this.state
           console.log(this.state);
         return (
             <div>
-                <Modal show={this.props.modalEditShow} onHide={this.modalClose}>
-                  <Modal.Header>
-                    <Modal.Title>{form.experience_name}</Modal.Title>
-                  </Modal.Header>
+                <Modal show={this.props.modalEditShow} onHide={this.props.modalClose}>
+                    <Modal.Header>
+                        <Modal.Title>Edit Experience</Modal.Title>
+                    </Modal.Header>
 
                     <Modal.Body>
                         <Form>
+                            <Form.Label id="experience_name">Experience Name</Form.Label>
+                            <FormControl name="experience_name" type="text" value={form.experience_name} onChange={this.handleChange} />
+
                             <Form.Label id="experience_type">Experience Type:</Form.Label>
-                            <FormControl name="experience_type"type="text" value={form.experience_type} onChange={this.handleChange}  />
+                            <Form.Control
+                            name="experience_type"  defaultValue={form.experience_type} onChange={this.handleChange} as="select">
+                                <option>Adrenaline</option>
+                                <option>Foodie</option>
+                                <option>Beach Bum</option>
+                                <option>Family</option>
+                                <option>Sporty</option>
+                                <option>Cultural</option>
+                                <option>Fashonista</option>
+                                <option>LGBT</option>
+                                <option>Outdoors</option>
+                            </Form.Control>
 
                             <Form.Label id="experience_sub_type">Experience Sub-type:</Form.Label>
-                            <FormControl name="experience_sub_type" type="text" value={form.experience_sub_type} onChange={this.handleChange} />
-
+                            <Form.Control
+                            name="experience_sub_type"
+                            defaultValue={form.experience_sub_type} onChange={this.handleChange} as="select">
+                                <option value="DEFAULT" disabled>Choose An Activity</option>
+                                <option>Day Activity</option>
+                                <option>Night Acitivity</option>
+                                <option>Restaurant $</option>
+                                <option>Restaurant $$</option>
+                                <option>Restaurant $$$</option>
+                            </Form.Control>
                             <Form.Label id="experience_description">Description:</Form.Label>
                             <FormControl name="experience_description" type="text" value={form.experience_description} onChange={this.handleChange} />
 
@@ -91,8 +115,7 @@ class EditModal extends Component {
                     </Modal.Body>
 
                     <Modal.Footer>
-                        <Button onClick={this.props.modalClose} variant="secondary"> Close </Button>
-                        <Button id="submit" type="submit"  className="btn btn-primary" data-dismiss="modal" onClick={this.handleEdit}> Save Changes </Button>
+                        <Button id="submit" type="submit"  className="btn btn-primary" data-dismiss="modal" onClick={this.finalSave}> Save Changes </Button>
                     </Modal.Footer>
 
                 </Modal>

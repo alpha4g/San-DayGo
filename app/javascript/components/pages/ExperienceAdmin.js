@@ -46,24 +46,24 @@ class ExperienceAdmin extends React.Component {
     })
     render () {
         let {index, experience} = this.props
-        // console.log(this.props);
+
         return (
             <div>
                 <p>
-                <span>Experience Name: {experience.experience_name}  </span>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                <span>Experience Type: {experience.experience_type}  </span>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                <span><button onClick={this.modalOpen}> View Details </button></span>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                <span><button onClick={this.modalEdit}> Edit Info </button></span>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                <span><button onClick={() => this.delete(experience.id)}> Delete </button></span>
+                    <span>Experience Name: {experience.experience_name}  </span>
+                    <span>&nbsp;&nbsp;&nbsp;</span>
+                    <span>Experience Type: {experience.experience_type}  </span>
+                    <span>&nbsp;&nbsp;&nbsp;</span>
+                    <span><button onClick={this.modalOpen}> View Details </button></span>
+                    <span>&nbsp;&nbsp;&nbsp;</span>
+                    <span><button onClick={this.modalEdit}> Edit Info </button></span>
+                    <span>&nbsp;&nbsp;&nbsp;</span>
+                    <span><button onClick={() => this.delete(experience.id)}> Delete </button></span>
                 </p>
 
                 <EditModal  experience={experience} id={this.state.id} toggle={this.props.toggleEdit} modalEditShow={this.state.modalEditShow} modalClose={this.modalClose} edit={this.props.edit} />
 
-                <Modal className="modal" show = {this.state.modalShow} >
+                <Modal className="modal" show = {this.state.modalShow} onHide={this.modalClose} >
                     <Modal.Header>
                         <Modal.Title>{experience.experience_name}</Modal.Title>
                     </Modal.Header>
