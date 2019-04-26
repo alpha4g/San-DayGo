@@ -81,19 +81,19 @@ class Itinerary extends React.Component {
 
 
       const restaurantOne = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Restaurant $"
+        return experience.experience_sub_type === "$"
       })
       const restRandomOne = this.randomArray(restaurantOne)
 
 
       const restaurantTwo = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Restaurant $$"
+        return experience.experience_sub_type === "$$"
       })
       const restRandomTwo = this.randomArray(restaurantTwo)
 
 
       const restaurantThree = experiences.filter((experience) => {
-        return experience.experience_sub_type === "Restaurant $$$"
+        return experience.experience_sub_type === "$$$"
       })
       const restRandomThree = this.randomArray(restaurantThree)
 
