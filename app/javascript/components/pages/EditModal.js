@@ -56,8 +56,8 @@ class EditModal extends Component {
 
 
     render() {
-        let  {form} = this.state
-console.log(this.state);
+        let {form} = this.state
+          console.log(this.state);
         return (
             <div>
                 <Modal show={this.props.modalEditShow} onHide={this.modalClose}>

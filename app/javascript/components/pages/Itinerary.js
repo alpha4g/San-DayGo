@@ -58,7 +58,6 @@ class Itinerary extends React.Component {
         return experience.experience_type === match.params.experience_type
       })
       const daytime = experiences.filter((experience) => {
-        // experience[Math.floor(Math.random()*experience.length)]
         return experience.experience_sub_type === "Day Activity"
       })
       const nighttime = experiences.filter((experience) => {
