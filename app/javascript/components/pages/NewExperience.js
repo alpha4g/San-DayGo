@@ -20,6 +20,10 @@ class NewExperience extends React.Component {
         }
     }
 
+    componentDidMount = () => {
+      window.scrollTo(0,0)
+    }
+
     createExperience = (experience) => {
         return fetch('http://localhost:3000/experiences', {
             body: JSON.stringify({experience}),

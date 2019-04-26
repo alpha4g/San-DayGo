@@ -30,6 +30,7 @@ class Itinerary extends React.Component {
   }
 
   componentDidMount = () => {
+      window.scrollTo(0,0)
       fetch(`http://localhost:3000/experiences.json?type=${this.props.match.params.experience_type}`)
       .then((response) => {
         return response.json()
@@ -68,49 +69,6 @@ class Itinerary extends React.Component {
       })
     return (
       <React.Fragment>
-
-        <section><h1>Here Is Your {match.params.experience_type} Itinerary</h1></section><hr/>
-        <section>
-          <h1>Day Time Activities</h1>
-            <ul>
-              {daytime.slice(1,4).map((experience, index) => {
-                return(
-                    <li key={index}>
-                     Name: {experience.experience_name}<br/>
-                     Description: {experience.experience_description}
-                    </li>
-                )
-              })}
-            </ul>
-        </section>
-        <section>
-        <hr/>
-          <h1>Suggested Restaurants</h1>
-            <ul>
-              {restaurant.slice(1,5).map((experience, index) => {
-                return(
-                    <li key={index}>
-                     Name: {experience.experience_name}<br/>
-                     Description: {experience.experience_description}
-                    </li>
-                )
-              })}
-            </ul>
-        </section>
-        <section>
-        <hr/>
-          <h1>Nighttime Activities</h1>
-          <ul>
-            {nighttime.slice(1,4).map((experience, index) => {
-              return(
-                  <li key={index}>
-                   Name: {experience.experience_name}<br/>
-                   Description: {experience.experience_description}
-                  </li>
-              )
-            })}
-          </ul>
-
         <section>
             <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
             <h1 className='intinerary-text-blue'>Enjoy Your {match.params.experience_type} Itinerary</h1>
@@ -124,7 +82,7 @@ class Itinerary extends React.Component {
                 <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
                 <br />
                 <br />
-                  {daytime.map((experience, index) => {
+                  {daytime.slice(0,3).map((experience, index) => {
                     return(
                       <li className="white-font" key={index}>
                        Name: {experience.experience_name} Description: {experience.experience_description}
@@ -142,7 +100,7 @@ class Itinerary extends React.Component {
                 <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
                 <br />
                 <br />
-                  {restaurant.map((experience, index) => {
+                  {restaurant.slice(0,4).map((experience, index) => {
                     return(
                       <li className="white-font" key={index}>
                         Name: {experience.experience_name}  Description: {experience.experience_description}
@@ -160,7 +118,7 @@ class Itinerary extends React.Component {
               <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
               <br />
               <br />
-                {nighttime.map((experience, index) => {
+                {nighttime.slice(0,3).map((experience, index) => {
                   return(
                     <li className="white-font" key={index}>
                       Name: {experience.experience_name}  Description: {experience.experience_description}
