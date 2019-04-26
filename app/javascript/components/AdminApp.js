@@ -10,6 +10,7 @@ import ExperienceAdmins from './pages/ExperienceAdmins'
 import NewExperience from './pages/NewExperience'
 import NoMatch from './pages/NoMatch'
 import Tourist from './pages/Tourist'
+import Itinerary from './pages/Itinerary'
 
 class AdminApp extends React.Component {
   render () {
@@ -19,7 +20,8 @@ class AdminApp extends React.Component {
         <Switch>
            <Route exact path="/admin" component={ExperienceAdmins} />
            <Route path="/NewExperience" component={NewExperience} />
-           <Route path="/" component={Tourist} />
+           <Route exact path="/" component={Tourist} />
+           <Route path="/itinerary/:experience_type" component={Itinerary} />
            <Route component={NoMatch}/>
         </Switch>
       </React.Fragment>
