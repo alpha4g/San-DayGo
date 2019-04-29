@@ -62,7 +62,7 @@ class EditModal extends Component {
           console.log(this.state);
         return (
             <div>
-                <Modal show={this.props.modalEditShow} onHide={this.props.modalClose}>
+                <Modal className="modal" show={this.props.modalEditShow} onHide={this.props.modalClose} backdrop="static">
                     <Modal.Header>
                         <Modal.Title>Edit Experience</Modal.Title>
                     </Modal.Header>
