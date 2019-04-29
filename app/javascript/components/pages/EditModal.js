@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {
-  Modal, Button, Form, FormControl
-} from 'react-bootstrap'
-
+import { Modal, Button, Form, FormControl } from 'react-bootstrap'
+import ExperiencePlaceholder from '../../images/Experience-Placeholder.jpg'
 
 class EditModal extends Component {
     constructor(props) {
@@ -64,15 +62,18 @@ class EditModal extends Component {
             <div>
                 <Modal show={this.props.modalEditShow} onHide={this.props.modalClose}>
                     <Modal.Header>
-                        <Modal.Title>Edit Experience</Modal.Title>
+                        <Modal.Title id="edit-title">Edit Experience</Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body>
                         <Form>
+                            <img src={ExperiencePlaceholder} className="responsive" alt='Beach Image with San Diego Tourism Logo' />
+                            <br/>
+                            <br/>
                             <Form.Label id="experience_name">Experience Name</Form.Label>
                             <FormControl name="experience_name" type="text" value={form.experience_name} onChange={this.handleChange} />
-
-                            <Form.Label id="experience_type">Experience Type:</Form.Label>
+                            <br/>
+                            <Form.Label id="experience_type">Experience Type</Form.Label>
                             <Form.Control
                             name="experience_type"  defaultValue={form.experience_type} onChange={this.handleChange} as="select">
                                 <option>Restaurant</option>
@@ -86,8 +87,8 @@ class EditModal extends Component {
                                 <option>LGBT</option>
                                 <option>Outdoors</option>
                             </Form.Control>
-
-                            <Form.Label id="experience_sub_type">Experience Sub-type:</Form.Label>
+                            <br/>
+                            <Form.Label id="experience_sub_type">Experience Sub-type</Form.Label>
                             <Form.Control
                             name="experience_sub_type"
                             defaultValue={form.experience_sub_type} onChange={this.handleChange} as="select">
@@ -98,25 +99,27 @@ class EditModal extends Component {
                                 <option>$$</option>
                                 <option>$$$</option>
                             </Form.Control>
-                            <Form.Label id="experience_description">Description:</Form.Label>
+                            <br/>
+                            <Form.Label id="experience_description">Description</Form.Label>
                             <FormControl name="experience_description" type="text" defaultValue={form.experience_description} onChange={this.handleChange} />
-
-                            <Form.Label id="address">Address:</Form.Label>
+                            <br/>
+                            <Form.Label id="address">Address</Form.Label>
                             <FormControl name="address" type="text" defaultValue={form.address} onChange={this.handleChange} />
-
-                            <Form.Label id="website">Website:</Form.Label>
+                            <br/>
+                            <Form.Label id="website">Website</Form.Label>
                             <FormControl name="website" type="text" defaultValue={form.website} onChange={this.handleChange} />
-
-                            <Form.Label id="phone_number">Phone Number:</Form.Label>
+                            <br/>
+                            <Form.Label id="phone_number">Phone Number</Form.Label>
                             <FormControl name="phone_number" type="text" defaultValue={form.phone_number} onChange={this.handleChange} />
-
-                            <Form.Label id="hours">Hours:</Form.Label>
+                            <br/>
+                            <Form.Label id="hours">Hours</Form.Label>
                             <FormControl name="hours" type="text" defaultValue={form.hours} onChange={this.handleChange} />
+                            <br/>
                         </Form>
                     </Modal.Body>
 
                     <Modal.Footer>
-                        <Button id="submit" type="submit"  className="btn btn-primary" data-dismiss="modal" onClick={this.finalSave}> Save Changes </Button>
+                        <Button id="submit" type="submit"  className="save-button" data-dismiss="modal" onClick={this.finalSave}> Save Changes </Button>
                     </Modal.Footer>
 
                 </Modal>
