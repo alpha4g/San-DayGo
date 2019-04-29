@@ -72,7 +72,7 @@ class Tourist extends React.Component {
                           <Card>
                             <Card.Img variant='top' src={Adrenaline} />
                             <Card.Body>
-                              <Card.Title className="card-title">Adrenaline</Card.Title>
+                              <Card.Title className="card-title">Adrenaline Junkie</Card.Title>
                               <Card.Text className="center">
                                 Experience the adreniline rush with a day filled with high-energy experiences.
                               </Card.Text>
@@ -87,7 +87,7 @@ class Tourist extends React.Component {
                             <Card.Body>
                               <Card.Title className="center">Beach Bum</Card.Title>
                               <Card.Text className="center">
-                                Experience the adreniline rush with a day filled with high-energy experiences.
+                                Soak in the warm San Diego sun while running your toes through white-sand beaches.
                               </Card.Text>
                               <Link to="/itinerary/BeachBum"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                               <br />
@@ -98,9 +98,9 @@ class Tourist extends React.Component {
                           <Card>
                             <Card.Img variant='top' src={Outdoors} />
                             <Card.Body>
-                              <Card.Title className="center">Outdoors</Card.Title>
+                              <Card.Title className="center">Outdoor Adventurer</Card.Title>
                               <Card.Text className="center">
-                                Experience the adreniline rush with a day filled with high-energy experiences.
+                                Discover the beauty of nature while journeying through endless hidden trails.
                               </Card.Text>
                               <Link to="/itinerary/Outdoors"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                               <br />
@@ -111,9 +111,9 @@ class Tourist extends React.Component {
                         <Card>
                           <Card.Img variant='top' src={Family} />
                           <Card.Body>
-                            <Card.Title className="center">Family</Card.Title>
+                            <Card.Title className="center">Family Frolicer</Card.Title>
                             <Card.Text className="center">
-                              Experience the adreniline rush with a day filled with high-energy experiences.
+                              Spend the day with the kids experiencing some of the greatest family advetures available.
                             </Card.Text>
                               <Link to="/itinerary/Family"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
@@ -124,9 +124,9 @@ class Tourist extends React.Component {
                         <Card>
                           <Card.Img variant='top' src={Sporty} />
                           <Card.Body>
-                            <Card.Title className="center">Sporty</Card.Title>
+                            <Card.Title className="center">Sports Fanatic</Card.Title>
                             <Card.Text className="center">
-                              Experience the adreniline rush with a day filled with high-energy experiences.
+                              Break a sweat and feel the burn while experienceing a day of physical activity and adventure.
                             </Card.Text>
                               <Link to="/itinerary/Sporty"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
@@ -137,9 +137,9 @@ class Tourist extends React.Component {
                         <Card>
                           <Card.Img variant='top' src={Cultural} />
                           <Card.Body>
-                            <Card.Title className="center">Cultural</Card.Title>
+                            <Card.Title className="center">Culture Shocker</Card.Title>
                             <Card.Text className="center">
-                              Experience the adreniline rush with a day filled with high-energy experiences.
+                              Discover the "history of the ages" from local San Dieg surroundings to far-away lands.
                             </Card.Text>
                               <Link to="/itinerary/Cultural"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
@@ -150,9 +150,9 @@ class Tourist extends React.Component {
                         <Card>
                           <Card.Img variant='top' src={Fashionista} />
                           <Card.Body>
-                            <Card.Title className="center">Fashionista</Card.Title>
+                            <Card.Title className="center">Fabulous Fashionista</Card.Title>
                             <Card.Text className="center">
-                              Experience the adreniline rush with a day filled with high-energy experiences.
+                              Pamper your inner Diva and do the things you do best from a spa day to shopping 'til you drop.
                             </Card.Text>
                               <Link to="/itinerary/Fashionista"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
@@ -163,9 +163,9 @@ class Tourist extends React.Component {
                         <Card>
                           <Card.Img variant='top' src={LGBT} />
                           <Card.Body>
-                            <Card.Title className="center">LGBTQ</Card.Title>
+                            <Card.Title className="center">1-2-3 LGBT</Card.Title>
                             <Card.Text className="center">
-                              Experience the adreniline rush with a day filled with high-energy experiences.
+                              Explore and experience San Diego's diverse and expansive gay & lesbian community.
                             </Card.Text>
                               <Link to="/itinerary/LGBTQ"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
@@ -176,9 +176,9 @@ class Tourist extends React.Component {
                         <Card>
                           <Card.Img variant='top' src={Foodie} />
                           <Card.Body>
-                            <Card.Title className="center">Foodie</Card.Title>
+                            <Card.Title className="center">Foodie Fanatic</Card.Title>
                             <Card.Text className="center">
-                              Experience the adreniline rush with a day filled with high-energy experiences.
+                              Savor the incredible flavors of San Diego as you sample its wide-array of cultures and dishes.
                             </Card.Text>
                               <Link to="/itinerary/Foodie"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />

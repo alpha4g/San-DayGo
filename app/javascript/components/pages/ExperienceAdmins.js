@@ -64,7 +64,7 @@ class ExperienceAdmins extends React.Component {
         <div className="section-padding">
             <h2>ADMIN DASHBOARD</h2>
             <br/>
-            <Link to="/NewExperience"><Button className="med-button" variant="primary">Create New Experience</Button></Link>
+            <Link to="/NewExperience"><Button className="create-button" variant="primary">Create New Experience</Button></Link>
             <br/>
             <br/>
             <div className="container">
