@@ -43,7 +43,9 @@ class ExperienceAdmin extends React.Component {
     });
 
     delete=(id)=>{
+      if(window.confirm('Are You Sure You Wish To Delete This Experience?')){
         this.props.delete(id)
+      }
     }
 
     modalClose = () =>
