@@ -146,18 +146,17 @@ class NewExperience extends React.Component {
                     type="text"/>
             </Form.Group>
             <br className="line-break-spacing"/>
+            <br className="line-break-spacing"/>
+            <br className="line-break-spacing"/>
             <Link to="/admin"
             name="name"
             onClick = {this.handleSubmit}
-            type="submit">Create The Experience</Link>
+            type="submit" ><Button className="submit-button" variant="primary">Save</Button></Link>
+            <Link to="/admin"><Button className="back-button" variant="primary">Back</Button></Link>
         </Form>
-        <br className="line-break-spacing" />
-        <Link to="/admin">Back</Link>
         </div>
     </React.Fragment>
-
             );
         }
     }
-
 export default NewExperience

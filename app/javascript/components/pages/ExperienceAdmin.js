@@ -10,6 +10,9 @@ import {
   Card,
 } from 'react-bootstrap'
 
+import ExperiencePlaceholder from '../../images/Experience-Placeholder.jpg'
+import Map from '../../images/map.jpg'
+
 
 class ExperienceAdmin extends React.Component {
     constructor(props){
@@ -85,25 +88,28 @@ class ExperienceAdmin extends React.Component {
 
                 <EditModal  experience={experience} id={this.state.id}  modalEditShow={this.state.modalEditShow} modalClose={this.modalClose}/>
 
-                <Modal className="modal" show = {this.state.modalShow} onHide={this.modalClose} backdrop="static" >
+                <Modal className="modal" show = {this.state.modalShow} onHide={this.modalCloseView} >
                     <Modal.Header>
-                        <Modal.Title>{experience.experience_name}</Modal.Title>
+                        <Modal.Title>{experience.experience_type} - {experience.experience_sub_type}</Modal.Title>
                     </Modal.Header>
 
 
                     <Modal.Body>
-                        <p>Experience Type: {experience.experience_type}</p>
-                        <p>Experience Sub-type: {experience.experience_sub_type}</p>
-                        <p>Description: {experience.experience_description}</p>
-                        <p>Address: {experience.address}</p>
+                        <img src={ExperiencePlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
+                        <br/>
+                        <br/>
+                        <h3>{experience.experience_name}</h3>
+                        <p>{experience.experience_description}</p>
                         <p>Website: {experience.website}</p>
                         <p>Phone Number: {experience.phone_number}</p>
                         <p>Hours: {experience.hours}</p>
+                        <p>Address: {experience.address}</p>
+                        <img src={Map} className="responsive" alt='Map of San Diego' />
                     </Modal.Body>
 
 
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={this.modalCloseView}>Close</Button>
+                        <Button variant="secondary" className="save-button" onClick={this.modalCloseView}>Close</Button>
                     </Modal.Footer>
                 </Modal>
             </div>
