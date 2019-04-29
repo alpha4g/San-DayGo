@@ -60,7 +60,7 @@ class EditModal extends Component {
           console.log(this.state);
         return (
             <div>
-                <Modal className="modal" show={this.props.modalEditShow} onHide={this.props.modalClose} backdrop="static">
+                <Modal show={this.props.modalEditShow} onHide={this.props.modalClose} backdrop="static">
                     <Modal.Header>
                         <Modal.Title id="edit-title">Edit Experience</Modal.Title>
                     </Modal.Header>
@@ -119,7 +119,7 @@ class EditModal extends Component {
                     </Modal.Body>
 
                     <Modal.Footer>
-                        <Button id="submit" type="submit"  className="save-button" data-dismiss="modal" onClick={this.finalSave}> Save Changes </Button>
+                        <Button id="submit" type="submit"  className="save-button" data-dismiss="modal" onClick={this.finalSave}>Save</Button>
                     </Modal.Footer>
 
                 </Modal>

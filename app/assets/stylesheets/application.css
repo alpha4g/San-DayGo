@@ -167,6 +167,7 @@ h6 {
     background: #1b75bc;
     border-color: #1b75bc;
     width: 100%;
+    font-size: 1.07rem;
 }
 
 .button:hover {
@@ -178,12 +179,43 @@ h6 {
     margin: auto;
     background: #1b75bc;
     border-color: #1b75bc;
-    width: 300px;
-    display:block;
-	text-align:center;
+    width: 25%;
+    display: block;
+	text-align: center;
+    font-size: 1.07rem;
 }
 
 .create-button:hover {
+    background-color: #42B5e8;
+    border-color: #42B5e8;
+}
+
+.submit-button {
+    margin: auto;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    width: 150px;
+    display: block;
+	text-align: center;
+    font-size: 1.07rem;
+}
+
+.submit-button:hover {
+    background-color: #42B5e8;
+    border-color: #42B5e8;
+}
+
+.back-button {
+    margin: auto;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    width: 150px;
+    display: block;
+	text-align: center;
+    font-size: 1.07rem;
+}
+
+.back-button:hover {
     background-color: #42B5e8;
     border-color: #42B5e8;
 }
@@ -195,6 +227,7 @@ h6 {
     width: 20%;
     display: flex;
     justify-content: center;
+    font-size: 1.07rem;
 }
 
 .med-button:hover {
@@ -202,6 +235,24 @@ h6 {
     border-color: #42B5e8;
 }
 
+.logout-button {
+    margin: auto;
+    padding: 5px;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.07rem;
+}
+
+.logout-button:hover {
+    background-color: #42B5e8;
+    border-color: #42B5e8;
+    color: white;
+}
 
 .card-text {
     text-align: center;
@@ -296,19 +347,19 @@ h6 {
 
 .experience-label-font {
     font-family: 'Fjalla One';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     color: #faa431;
 }
 
 /* MODAL Styling */
+
 .modal-wrapper {
     background: white;
     border: 1px solid #d0cccc;
-    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17); */
     margin: 150px auto 0;
     transition: all .8s;
-    width: 500px;
+    width: 75%;
 }
 
 .modal-header {
@@ -328,8 +379,8 @@ h6 {
 }
 
 .modal-body {
-    padding: 20px 50px;
-    width: 500px;
+    padding: 30px 30px;
+
 }
 
 .modal-footer {
@@ -339,7 +390,8 @@ h6 {
 }
 
 .close-modal-btn {
-    background: white;
+    background:#faa431;
+    color: white
     cursor: pointer;
     float: right;
     font-size: 50px;
@@ -347,7 +399,8 @@ h6 {
 }
 
 .close-modal-btn:hover {
-    color: black;
+    background-color: #dbf0fc;
+    color: gray;
 }
 
 .btn-cancel, .btn-continue {
@@ -384,12 +437,19 @@ h6 {
     font-weight: bold;
 }
 .save-button {
-    background-color: #dbf0fc;
-    color: gray;
+    background-color: #faa431;
+    border-color: #faa431;
+    color: white;
 }
 .save-button:hover {
-    background-color: gray;
+    background-color: #42B5e8;
+    border-color: #42B5e8;
+    color: white;
 }
 .modal-title {
     color: white;
+}
+
+a:link {
+  text-decoration: none;
 }
