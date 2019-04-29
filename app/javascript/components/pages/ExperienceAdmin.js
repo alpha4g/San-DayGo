@@ -81,9 +81,9 @@ class ExperienceAdmin extends React.Component {
 
 
 
-                <EditModal  experience={experience} id={this.state.id} toggle={this.props.toggleEdit} modalEditShow={this.state.modalEditShow} modalClose={this.modalClose} edit={this.props.edit} />
+                <EditModal  experience={experience} id={this.state.id}  modalEditShow={this.state.modalEditShow} modalClose={this.modalClose}/>
 
-                <Modal className="modal" show = {this.state.modalShow} onHide={this.modalClose} >
+                <Modal className="modal" show = {this.state.modalShow} onHide={this.modalClose} backdrop="static" >
                     <Modal.Header>
                         <Modal.Title>{experience.experience_name}</Modal.Title>
                     </Modal.Header>
