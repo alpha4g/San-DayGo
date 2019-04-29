@@ -41,7 +41,7 @@ class ExperiencesController < ActionController::API
     private
 
     def experience_params
-        params.require(:experience).permit(:experience_name, :experience_type,:experience_sub_type,:experience_description,:address,:website,:phone_number,:hours)
+        params.require(:experience).permit(:experience_name, :experience_type,:experience_sub_type,:experience_description,:address,:website,:phone_number,:hours,:photo)
     end
 
 end

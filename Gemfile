@@ -58,3 +58,5 @@ gem "webpacker", "~> 4.0"
 gem "react-rails", "~> 2.5"
 
 gem "devise", "~> 4.6"
+
+gem "aws-sdk-s3", "~> 1.36"
