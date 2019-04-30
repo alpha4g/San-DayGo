@@ -78,14 +78,14 @@ class EditModal extends Component {
                             name="experience_type"  defaultValue={form.experience_type} onChange={this.handleChange} as="select">
                                 <option>Restaurant</option>
                                 <option>Adrenaline</option>
-                                <option>Foodie</option>
-                                <option>Beach Bum</option>
+                                <option>Food</option>
+                                <option>Beach</option>
                                 <option>Family</option>
-                                <option>Sporty</option>
+                                <option>Sports</option>
                                 <option>Cultural</option>
-                                <option>Fashonista</option>
+                                <option>Fashon</option>
                                 <option>LGBT</option>
-                                <option>Outdoors</option>
+                                <option>Outdoor</option>
                             </Form.Control>
                             <br/>
                             <Form.Label id="experience_sub_type">Experience Sub-type</Form.Label>
@@ -94,7 +94,7 @@ class EditModal extends Component {
                             defaultValue={form.experience_sub_type} onChange={this.handleChange} as="select">
                                 <option value="DEFAULT" disabled>Choose An Activity</option>
                                 <option>Day Activity</option>
-                                <option>Night Acitivity</option>
+                                <option>Night Activity</option>
                                 <option>$</option>
                                 <option>$$</option>
                                 <option>$$$</option>

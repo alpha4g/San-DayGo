@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Form, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
+import AdminHeader2 from '../../images/Admin-Header2.jpg'
 
 
 
@@ -56,7 +56,7 @@ class NewExperience extends React.Component {
       let { form } = this.state
     return (
     <React.Fragment>
-    <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
+    <img src={AdminHeader2} className="responsive" alt='San Diego Skyline with Admin Logo' />
     <div className="section-padding">
             <h2>ENTER NEW EXPERIENCE</h2>
             <br/>
@@ -80,14 +80,14 @@ class NewExperience extends React.Component {
                         <option value="DEFAULT" disabled>Choose One</option>
                         <option>Restaurant</option>
                         <option>Adrenaline</option>
-                        <option>Foodie</option>
-                        <option>Beach Bum</option>
+                        <option>Food</option>
+                        <option>Beach</option>
                         <option>Family</option>
-                        <option>Sporty</option>
-                        <option>Cultural</option>
-                        <option>Fashonista</option>
+                        <option>Sports</option>
+                        <option>Culture</option>
+                        <option>Fashon</option>
                         <option>LGBT</option>
-                        <option>Outdoors</option>
+                        <option>Outdoor</option>
                     </Form.Control>
             </Form.Group>
             <br className="line-break-spacing"/>
