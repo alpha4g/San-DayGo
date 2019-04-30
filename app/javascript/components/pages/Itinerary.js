@@ -2,8 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
 import Button from 'react-bootstrap'
-import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
+import HeaderPlaceholder from '../../images/Header1.jpg'
 import ExperiencePlaceholder from '../../images/Experience-Placeholder.jpg'
+
+import { Container, Row, Col } from 'react-bootstrap'
 
 
 class Itinerary extends React.Component {
@@ -101,81 +103,174 @@ class Itinerary extends React.Component {
       <React.Fragment>
         <section>
             <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
-            <h1 className='intinerary-text-blue'>Enjoy Your {match.params.experience_type} Itinerary</h1>
-
         </section>
-        <div className="section-background-orange">
-            <section className="section-padding">
-              <h2 className="white-h2-title">DAYTIME ACTIVITES</h2>
-              <br />
-                <ul>
-                <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
-                <br />
-                <br />
-                  {daytimeRandom.slice(0,2).map((experience, index) => {
-                    return(
-                      <li className="white-font" key={index}>
-                       Name: {experience.experience_name} Description: {experience.experience_description}
-                      </li>
-                    )
-                  })}
-                </ul>
-            </section>
-        </div>
         <div className="section-background-lightblue">
             <section className="section-padding">
-              <h2 className="white-h2-title">SUGGESTED RESTAURANTS</h2>
+              <h2 className="white-h2-title">Daytime  {match.params.experience_type} Experiences</h2>
               <br />
-                <ul>
-                <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
-                <br />
-                <br />
+                  {daytimeRandom.slice(0,2).map((experience, index) => {
+                    return(
+                        <div className="container">
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6  col-sm-12">
+                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Vertial-Hold-Old-Town.jpg"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </div>
+                            <div className="col-lg-6 col-md-6  col-sm-12">
+                                <div className="white-font" key={index}>
+                                    <div className="experience-label-font-white">{experience.experience_name}</div>
+                                    <p className="white-font">{experience.experience_description}</p>
+                                    <p className="white-font">Hours: {experience.hours}<br/>
+                                    Phone: {experience.phone_number}<br/>
+                                    Address: {experience.address}<br/>
+                                    Website: {experience.website}</p>
+                                    <button className="itinerary-button-day">View More</button>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    )
+                  })}
+            </section>
+        </div>
+        <div className="section-background-orange">
+            <section className="section-padding">
+              <h2 className="white-h2-title">Recomended Restaurants</h2>
+              <br />
                   {restRandomOne.slice(0,1).map((experience, index) => {
                     return(
-                    <li className="white-font" key={index}>
-                        Name: {experience.experience_name}
-                        Description: {experience.experience_description}
-                    </li>
+                        <div className="container">
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6  col-sm-12">
+                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Mo'sBar.jpg"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </div>
+                            <div className="col-lg-6 col-md-6  col-sm-12">
+                                <div className="white-font" key={index}>
+                                    <div className="experience-label-font-white">{experience.experience_name}</div>
+                                    <p className="white-font">{experience.experience_description}</p>
+                                    <p className="white-font">Price: $$<br/>
+                                    Hours: {experience.hours}<br/>
+                                    Phone: {experience.phone_number}<br/>
+                                    Address: {experience.address}<br/>
+                                    Website: {experience.website}</p>
+                                    <button className="itinerary-button-restaurant">View More</button>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
                     )
                   })}
                   {restRandomTwo.slice(0,1).map((experience, index) => {
                     return(
-                    <li className="white-font" key={index}>
-                        Name: {experience.experience_name}
-                        Description: {experience.experience_description}
-                    </li>
+                        <div className="container">
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6  col-sm-12">
+                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Mo'sBar.jpg"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </div>
+                            <div className="col-lg-6 col-md-6  col-sm-12">
+                                <div className="white-font" key={index}>
+                                    <div className="experience-label-font-white">{experience.experience_name}</div>
+                                    <p className="white-font">{experience.experience_description}</p>
+                                    <p className="white-font">Price: $$<br/>
+                                    Hours: {experience.hours}<br/>
+                                    Phone: {experience.phone_number}<br/>
+                                    Address: {experience.address}<br/>
+                                    Website: {experience.website}</p>
+                                    <button className="itinerary-button-restaurant">View More</button>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
                     )
                   })}
                   {restRandomThree.slice(0,1).map((experience, index) => {
                     return(
-                    <li className="white-font" key={index}>
-                        Name: {experience.experience_name}
-                        Description: {experience.experience_description  }
-                    </li>
+                        <div className="container">
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6  col-sm-12">
+                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Mo'sBar.jpg"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </div>
+                            <div className="col-lg-6 col-md-6  col-sm-12">
+                                <div className="white-font" key={index}>
+                                    <div className="experience-label-font-white">{experience.experience_name}</div>
+                                    <p className="white-font">{experience.experience_description}</p>
+                                    <p className="white-font">Price: $$$<br/>
+                                    Hours: {experience.hours}<br/>
+                                    Phone: {experience.phone_number}<br/>
+                                    Address: {experience.address}<br/>
+                                    Website: {experience.website}</p>
+                                    <button className="itinerary-button-restaurant">View More</button>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
                     )
                   })}
-                </ul>
             </section>
         </div>
         <div className="section-background-darkblue">
             <section className="section-padding">
-              <h2 className="white-h2-title">NIGHTTIME ACTIVITIES</h2>
-              <br />
-              <ul>
-              <img src={ExperiencePlaceholder} className="responsive" alt='Experience Image' />
-              <br />
+              <h2 className="white-h2-title">Nighttime  {match.params.experience_type} Experiences</h2>
               <br />
                 {nightRandom.slice(0,2).map((experience, index) => {
                   return(
-                    <li className="white-font" key={index}>
-                      Name: {experience.experience_name}  Description: {experience.experience_description}
-                    </li>
+                      <div className="container">
+                        <div className="row">
+                          <div className="col-lg-6 col-md-6  col-sm-12">
+                              <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Mo'sBar.jpg"/>
+                              <br/>
+                              <br/>
+                              <br/>
+                          </div>
+                          <div className="col-lg-6 col-md-6  col-sm-12">
+                              <div className="white-font" key={index}>
+                                  <div className="experience-label-font-white">{experience.experience_name}</div>
+                                  <p className="white-font">{experience.experience_description}</p>
+                                  <p className="white-font">Hours: {experience.hours}<br/>
+                                  Phone: {experience.phone_number}<br/>
+                                  Address: {experience.address}<br/>
+                                  Website: {experience.website}</p>
+                                  <button className="itinerary-button-day">View More</button>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                   )
                 })}
-              </ul>
             </section>
+            <div className="light-blue-background-small">
+            <section className="footer-padding">
+            <Link to="/">Start Over</Link>
+            </section>
+            </div>
         </div>
-        <Link to="/">Back</Link>
+
       </React.Fragment>
     );
   }

@@ -267,6 +267,16 @@ h6 {
      height: 100%;
  }
 
+ .light-blue-background-small {
+     background-color: #dbf0fc;
+     background-position: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     height: 100%;
+     margin: 0px;
+     text-align: center;
+ }
+
  .flex-container {
      margin: auto;
      padding: 10px;
@@ -350,6 +360,42 @@ h6 {
     font-size: 1.8rem;
     text-align: center;
     color: #faa431;
+}
+
+.experience-label-font-white {
+    font-family: 'Fjalla One';
+    font-size: 1.8rem;
+    color: white;
+}
+
+.itinerary-button-day {
+    margin: auto;
+    background: #faa431;
+    border-color: #faa431;
+    color: white;
+    padding: 5px;
+    width: 125px;
+    border-radius: 5px;
+}
+
+.itinerary-button-restaurant {
+    margin: auto;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    color: white;
+    padding: 5px;
+    width: 125px;
+    border-radius: 5px;
+}
+
+.itinerary-button-night {
+    margin: auto;
+    background: #42B5e8;
+    border-color: #42B5e8;
+    color: white;
+    padding: 5px;
+    width: 125px;
+    border-radius: 5px;
 }
 
 /* MODAL Styling */
@@ -452,4 +498,9 @@ h6 {
 
 a:link {
   text-decoration: none;
+}
+
+.itinerary-image {
+    width: 100%;
+    padding-right: 20px;
 }
