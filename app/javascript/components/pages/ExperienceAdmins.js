@@ -3,8 +3,7 @@ import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
 import ExperienceAdmin from './ExperienceAdmin'
 import EditModal from './EditModal'
-import AdminApp from '../AdminApp'
-import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
+import AdminHeader from '../../images/Admin-Header.jpg'
 import {
   Container,
   Row,
@@ -60,9 +59,9 @@ class ExperienceAdmins extends React.Component {
     return (
 
     <React.Fragment>
-        <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
+        <img src={AdminHeader} className="responsive" alt='Image of Ocean Beach Pier with Admin Poral Logo' />
         <div className="section-padding">
-            <h2>ADMIN DASHBOARD</h2>
+            <h2>USER EXPERIENCES</h2>
             <br/>
             <Link to="/NewExperience"><Button className="med-button" variant="primary">Create New Experience</Button></Link>
             <br/>
