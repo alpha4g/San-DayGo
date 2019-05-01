@@ -1,11 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
-import Button from 'react-bootstrap'
-import HeaderPlaceholder from '../../images/Header1.jpg'
+import HeaderPlaceholder from '../../images/Intinerary-Dark2.jpg'
 import ExperiencePlaceholder from '../../images/Experience-Placeholder.jpg'
-
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 
 
 class Itinerary extends React.Component {
@@ -104,6 +102,11 @@ class Itinerary extends React.Component {
         <section>
             <img src={HeaderPlaceholder} className="responsive" alt='San Diego with view of Coronado Bridge' />
         </section>
+        <div className="light-blue-background-small">
+        <section className="footer-padding">
+        <Link to="/"><Button className="itinerary-button-new">Generate New Itinerary</Button></Link>
+        </section>
+        </div>
         <div className="section-background-lightblue">
             <section className="section-padding">
               <h2 className="white-h2-title">Daytime  {match.params.experience_type} Experiences</h2>
@@ -264,11 +267,6 @@ class Itinerary extends React.Component {
                   )
                 })}
             </section>
-            <div className="light-blue-background-small">
-            <section className="footer-padding">
-            <Link to="/">Start Over</Link>
-            </section>
-            </div>
         </div>
 
       </React.Fragment>

@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Form, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import AdminHeader2 from '../../images/Admin-Header2.jpg'
+import AdminHeader2 from '../../images/Admin-Header-Dark.jpg'
 
 
 

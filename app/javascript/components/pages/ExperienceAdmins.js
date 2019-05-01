@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
 import ExperienceAdmin from './ExperienceAdmin'
 import EditModal from './EditModal'
-import AdminHeader from '../../images/Admin-Header.jpg'
+import AdminHeader from '../../images/Admin-Header-Dark.jpg'
 import {
   Container,
   Row,
@@ -68,13 +68,13 @@ class ExperienceAdmins extends React.Component {
             <br/>
             <div className="container">
               <div className="row">
-                <div className="col-4">
+                <div className="col-lg-3 col-sm-5">
                   <span className="experience-label-font">TITLE</span>
                 </div>
-                <div className="col-2">
+                <div className="col-lg-2 col-sm-3">
                   <span className="experience-label-font">TYPE</span>
                 </div>
-                <div className="col-3">
+                <div className="col-lg-3 col-sm-3">
                   <span className="experience-label-font">SUB TYPE</span>
                 </div>
                 <div className="col-1">
@@ -94,7 +94,6 @@ class ExperienceAdmins extends React.Component {
             )}
         </div>
     </React.Fragment>
-
         )
     }
 }

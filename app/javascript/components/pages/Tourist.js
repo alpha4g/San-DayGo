@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Link} from 'react-router-dom'
 
-import MainImage from '../../images/Landing-Page-Header.png';
+import MainImage from '../../images/Landing-Page-Header-Dark.jpg';
 import GenericImage from '../../images/Experience-Placeholder.jpg'
 import HeaderPlaceholder from '../../images/Header-Placeholder.jpg'
 import AboutSanDiego from '../../images/San-Diego-About.jpg'
@@ -16,7 +16,7 @@ import LGBT from '../../images/LGBT.jpg'
 import Outdoors from '../../images/Outdoors.jpg'
 import Sporty from '../../images/Sporty.jpg'
 import {Picture} from 'react-responsive-picture';
-import TourismLogo from '../../images/SDTourism-Logo.jpg'
+import TourismLogo from '../../images/TourismImage.jpg'
 import SDPlan from '../../images/San-Daygo-Plan.jpg'
 
 

@@ -21,7 +21,7 @@ h2 {
     font-family: 'Fjalla One';
     font-size: 3.25rem;
     text-align: center;
-    color: #faa431;
+    color: #f86726;
     letter-spacing: -1px;
 }
 
@@ -29,7 +29,7 @@ h3 {
     font-family: 'Fjalla One';
     font-size: 2.5rem;
     text-align: center;
-    color: #faa431;
+    color: #f86726;
     letter-spacing: -1px;
 }
 
@@ -37,7 +37,7 @@ h4 {
     font-family: 'Fjalla One';
     font-size: 1rem;
     text-align: center;
-    color: #faa431;
+    color: #f86726;
     letter-spacing: -1px;
 }
 
@@ -70,8 +70,8 @@ h6 {
 .footer-padding {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .section-background-darkblue {
@@ -92,7 +92,7 @@ h6 {
 }
 
 .section-background-orange {
-    background-color: #faa431;
+    background-color: #f86726;
     background-position: center;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -100,7 +100,7 @@ h6 {
 }
 
 .footer-background {
-    background-color: #faa431;
+    background-color: #f86726;
     background-position: center;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -125,7 +125,7 @@ h6 {
 .welcome-text-orange {
     font-family: 'Fjalla One';
     font-size: 6.0rem;
-    color: #faa431;
+    color: #f86726;
     letter-spacing: -4px;
     line-height: 1.5rem;
 }
@@ -179,7 +179,7 @@ h6 {
     margin: auto;
     background: #1b75bc;
     border-color: #1b75bc;
-    width: 25%;
+    padding: 8px 15px;
     display: block;
 	text-align: center;
     font-size: 1.07rem;
@@ -194,7 +194,7 @@ h6 {
     margin: auto;
     background: #1b75bc;
     border-color: #1b75bc;
-    width: 150px;
+    padding: 8px 15px;
     display: block;
 	text-align: center;
     font-size: 1.07rem;
@@ -209,7 +209,7 @@ h6 {
     margin: auto;
     background: #1b75bc;
     border-color: #1b75bc;
-    width: 150px;
+    padding: 8px 15px;
     display: block;
 	text-align: center;
     font-size: 1.07rem;
@@ -224,7 +224,7 @@ h6 {
     margin: auto;
     background: #1b75bc;
     border-color: #1b75bc;
-    width: 20%;
+    padding: 8px 15px;
     display: flex;
     justify-content: center;
     font-size: 1.07rem;
@@ -237,20 +237,17 @@ h6 {
 
 .logout-button {
     margin: auto;
-    padding: 5px;
-    background: #1b75bc;
-    border-color: #1b75bc;
-    width: 100px;
+    padding: 10px;
+    background: #f86726;
+    border-color: white;
+    padding: 8px 15px;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
     color: white;
     font-size: 1.07rem;
 }
 
 .logout-button:hover {
-    background-color: #42B5e8;
-    border-color: #42B5e8;
     color: white;
 }
 
@@ -260,7 +257,7 @@ h6 {
 }
 
  .light-blue-background {
-     background-color: #dbf0fc;
+     background-color: #bde4ff;
      background-position: center;
      padding-top: 80px;
      padding-bottom: 80px;
@@ -268,7 +265,7 @@ h6 {
  }
 
  .light-blue-background-small {
-     background-color: #dbf0fc;
+     background-color: #bde4ff;
      background-position: center;
      padding-top: 20px;
      padding-bottom: 20px;
@@ -326,7 +323,7 @@ h6 {
 }
 
 .devise-links {
-    color: #faa431;
+    color: #f86726;
 }
 
 .devise-links:hover {
@@ -345,8 +342,7 @@ h6 {
     background: #1b75bc;
     border-color: #1b75bc;
     color: white;
-    padding: 5px;
-    width: 75px;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -359,7 +355,7 @@ h6 {
     font-family: 'Fjalla One';
     font-size: 1.8rem;
     text-align: center;
-    color: #faa431;
+    color: #f86726;
 }
 
 .experience-label-font-white {
@@ -370,11 +366,10 @@ h6 {
 
 .itinerary-button-day {
     margin: auto;
-    background: #faa431;
-    border-color: #faa431;
+    background: #f86726;
+    border-color: #f86726;
     color: white;
-    padding: 5px;
-    width: 125px;
+    padding: 8px 15px;
     border-radius: 5px;
 }
 
@@ -383,8 +378,7 @@ h6 {
     background: #1b75bc;
     border-color: #1b75bc;
     color: white;
-    padding: 5px;
-    width: 125px;
+    padding: 8px 15px;
     border-radius: 5px;
 }
 
@@ -393,9 +387,21 @@ h6 {
     background: #42B5e8;
     border-color: #42B5e8;
     color: white;
-    padding: 5px;
-    width: 125px;
+    padding: 8px 15px;
     border-radius: 5px;
+}
+
+.itinerary-button-new {
+    margin: auto;
+    background: #1b75bc;
+    border-color: #1b75bc;
+    padding: 8px 15px;
+    font-size: 1.07rem;
+}
+
+.itinerary-button-new:hover {
+    background-color: #42B5e8;
+    border-color: #42B5e8;
 }
 
 /* MODAL Styling */
@@ -436,7 +442,7 @@ h6 {
 }
 
 .close-modal-btn {
-    background:#faa431;
+    background:#f86726;
     color: white
     cursor: pointer;
     float: right;
@@ -445,7 +451,7 @@ h6 {
 }
 
 .close-modal-btn:hover {
-    background-color: #dbf0fc;
+    background-color: #bde4ff;
     color: gray;
 }
 
@@ -483,8 +489,8 @@ h6 {
     font-weight: bold;
 }
 .save-button {
-    background-color: #faa431;
-    border-color: #faa431;
+    background-color: #f86726;
+    border-color: #f86726;
     color: white;
 }
 .save-button:hover {
@@ -503,4 +509,34 @@ a:link {
 .itinerary-image {
     width: 100%;
     padding-right: 20px;
+}
+
+.blue-wave-1 {
+  background-image: url("paper.gif");
+  background-repeat: round;
+}
+
+.blue-wave-3 {
+  background-image: url("paper.gif");
+  background-repeat: round;
+}
+
+.blue-wave-3 {
+  background-image: url("paper.gif");
+  background-repeat: round;
+}
+
+.orange-wave-1 {
+  background-image: url("paper.gif");
+  background-repeat: round;
+}
+
+.orange-wave-3 {
+  background-image: url("paper.gif");
+  background-repeat: round;
+}
+
+.orange-wave-3 {
+  background-image: url("paper.gif");
+  background-repeat: round;
 }

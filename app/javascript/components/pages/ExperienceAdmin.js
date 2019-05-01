@@ -62,22 +62,22 @@ class ExperienceAdmin extends React.Component {
             <div>
                 <div className="container">
                   <div className="row">
-                    <div className="col-4">
+                    <div className="col-lg-3 col-sm-5">
                       <span>{experience.experience_name}  </span>
                     </div>
-                    <div className="col-2">
+                    <div className="col-lg-2 col-sm-3">
                       <span>{experience.experience_type}  </span>
                     </div>
-                    <div className="col-3">
+                    <div className="col-lg-3 col-sm-3">
                       <span>{experience.experience_sub_type}  </span>
                     </div>
-                    <div className="col-1">
+                    <div className="col-lg-1 col-sm-4">
                       <span><button className="admin-button" onClick={this.modalOpen}>View</button></span>
                     </div>
-                    <div className="col-1">
+                    <div className="col-lg-1 col-sm-4">
                       <span><button className="admin-button" onClick={this.modalEdit}>Edit</button></span>
                     </div>
-                    <div className="col-1">
+                    <div className="col-lg-1 col-sm-4">
                       <span><button className="admin-button" onClick={() => this.delete(experience.id)}>Delete</button></span>
                     </div>
                   </div>
