@@ -150,7 +150,7 @@ class Itinerary extends React.Component {
                         <div className="container">
                           <div className="row">
                             <div className="col-lg-6 col-md-6  col-sm-12">
-                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Mo'sBar.jpg"/>
+                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Broken_Yolk_Cafe.jpg"/>
                                 <br/>
                                 <br/>
                                 <br/>
@@ -179,7 +179,7 @@ class Itinerary extends React.Component {
                         <div className="container">
                           <div className="row">
                             <div className="col-lg-6 col-md-6  col-sm-12">
-                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Mo'sBar.jpg"/>
+                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/the_crack_shack.jpg"/>
                                 <br/>
                                 <br/>
                                 <br/>
@@ -208,7 +208,7 @@ class Itinerary extends React.Component {
                         <div className="container">
                           <div className="row">
                             <div className="col-lg-6 col-md-6  col-sm-12">
-                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Mo'sBar.jpg"/>
+                                <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Juniper%26Ivy.jpg"/>
                                 <br/>
                                 <br/>
                                 <br/>

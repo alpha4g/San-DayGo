@@ -83,3 +83,4 @@ production:
   database: San_DayGo_production
   username: San_DayGo
   password: <%= ENV['SAN_DAYGO_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
