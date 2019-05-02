@@ -25,7 +25,7 @@ class ExperiencesController < ActionController::API
     def update
       @exp = Experience.find(params[:id])
         if @exp.update_attributes(experience_params)
-          render json: @exp
+          render :show
         else
           render json: @exp.errors, status: :unprocessable_entity
         end
