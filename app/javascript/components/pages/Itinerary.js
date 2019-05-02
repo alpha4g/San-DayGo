@@ -16,7 +16,7 @@ class Itinerary extends React.Component {
   }
 
   getExperience = (experience) => {
-      return fetch('http://localhost:3000/experiences', {
+      return fetch('/experiences', {
           body: JSON.stringify({experience}),
           headers: {
               'Content-Type' : 'application/json'
@@ -31,7 +31,7 @@ class Itinerary extends React.Component {
 
   componentDidMount = () => {
       window.scrollTo(0,0)
-      fetch(`http://localhost:3000/experiences.json?type=${this.props.match.params.experience_type}`)
+      fetch(`/experiences.json?type=${this.props.match.params.experience_type}`)
       .then((response) => {
         return response.json()
       })

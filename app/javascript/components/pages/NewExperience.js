@@ -28,7 +28,7 @@ class NewExperience extends React.Component {
     }
 
     createExperience = (experience) => {
-        return fetch('http://localhost:3000/experiences', {
+        return fetch('/experiences', {
             body: JSON.stringify({experience}),
             headers: {
                 'Content-Type' : 'application/json'

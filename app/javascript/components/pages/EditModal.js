@@ -22,7 +22,7 @@ class EditModal extends Component {
     }
     editExperience = (experience) => {
         console.log(experience)
-        return fetch(`http://localhost:3000/experiences/${experience.id}`, {
+        return fetch(`/experiences/${experience.id}`, {
             body: JSON.stringify({experience}),
             headers: {
                 'Content-Type' : 'application/json'
