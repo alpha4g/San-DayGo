@@ -83,7 +83,7 @@ class NewExperience extends React.Component {
                         <option>Beach</option>
                         <option>Family</option>
                         <option>Sports</option>
-                        <option>Culture</option>
+                        <option>Cultural</option>
                         <option>Fashion</option>
                         <option>LGBT</option>
                         <option>Outdoor</option>
