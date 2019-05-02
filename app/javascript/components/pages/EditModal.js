@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form, FormControl } from 'react-bootstrap'
 import ExperiencePlaceholder from '../../images/Experience-Placeholder.jpg'
+import ActiveStorage from './ActiveStorage'
 
 class EditModal extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class EditModal extends Component {
     }
     editExperience = (experience) => {
         console.log(experience)
-        return fetch(`http://localhost:3000/experiences/${experience.id}`, {
+        return fetch(`/experiences/${experience.id}`, {
             body: JSON.stringify({experience}),
             headers: {
                 'Content-Type' : 'application/json'
@@ -56,6 +57,7 @@ class EditModal extends Component {
     }
 
     render() {
+        let {experience} = this.props
         let {form} = this.state
           console.log(this.state);
         return (
@@ -76,14 +78,13 @@ class EditModal extends Component {
                             <Form.Label id="experience_type">Experience Type</Form.Label>
                             <Form.Control
                             name="experience_type"  defaultValue={form.experience_type} onChange={this.handleChange} as="select">
-                                <option>Restaurant</option>
                                 <option>Adrenaline</option>
                                 <option>Food</option>
                                 <option>Beach</option>
                                 <option>Family</option>
                                 <option>Sports</option>
                                 <option>Cultural</option>
-                                <option>Fashon</option>
+                                <option>Fashion</option>
                                 <option>LGBT</option>
                                 <option>Outdoor</option>
                             </Form.Control>
@@ -115,6 +116,7 @@ class EditModal extends Component {
                             <Form.Label id="hours">Hours</Form.Label>
                             <FormControl name="hours" type="text" defaultValue={form.hours} onChange={this.handleChange} />
                             <br/>
+                            <ActiveStorage experience={experience} />
                         </Form>
                     </Modal.Body>
 

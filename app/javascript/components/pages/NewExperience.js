@@ -28,7 +28,7 @@ class NewExperience extends React.Component {
     }
 
     createExperience = (experience) => {
-        return fetch('http://localhost:3000/experiences', {
+        return fetch('/experiences', {
             body: JSON.stringify({experience}),
             headers: {
                 'Content-Type' : 'application/json'
@@ -78,14 +78,13 @@ class NewExperience extends React.Component {
                     as="select"
                     defaultValue={'DEFAULT'}>
                         <option value="DEFAULT" disabled>Choose One</option>
-                        <option>Restaurant</option>
                         <option>Adrenaline</option>
                         <option>Food</option>
                         <option>Beach</option>
                         <option>Family</option>
                         <option>Sports</option>
-                        <option>Culture</option>
-                        <option>Fashon</option>
+                        <option>Cultural</option>
+                        <option>Fashion</option>
                         <option>LGBT</option>
                         <option>Outdoor</option>
                     </Form.Control>

@@ -342,7 +342,8 @@ h6 {
     background: #1b75bc;
     border-color: #1b75bc;
     color: white;
-    width: 100%;
+    width: 110%;
+    min-width: 75px;
     border-radius: 5px;
 }
 

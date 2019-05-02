@@ -128,7 +128,7 @@ class Tourist extends React.Component {
                             <Card.Text className="center">
                               Break a sweat and feel the burn while experienceing a day of physical activity and adventure.
                             </Card.Text>
-                              <Link to="/itinerary/Sport"><Button className="button" variant="primary">Create Itinerary</Button></Link>
+                              <Link to="/itinerary/Sports"><Button className="button" variant="primary">Create Itinerary</Button></Link>
                             <br />
                           </Card.Body>
                         </Card>

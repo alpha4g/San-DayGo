@@ -37,7 +37,7 @@ class ExperienceAdmins extends React.Component {
 
 
     deleteExperience = (id)=> {
-    	return fetch( `http://localhost:3000/experiences/${id}`, {
+    	return fetch( `/experiences/${id}`, {
 
     		method: "DELETE"
     	})

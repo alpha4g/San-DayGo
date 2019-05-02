@@ -16,7 +16,7 @@ class Itinerary extends React.Component {
   }
 
   getExperience = (experience) => {
-      return fetch('http://localhost:3000/experiences', {
+      return fetch('/experiences', {
           body: JSON.stringify({experience}),
           headers: {
               'Content-Type' : 'application/json'
@@ -31,7 +31,7 @@ class Itinerary extends React.Component {
 
   componentDidMount = () => {
       window.scrollTo(0,0)
-      fetch(`http://localhost:3000/experiences.json?type=${this.props.match.params.experience_type}`)
+      fetch(`/experiences.json?type=${this.props.match.params.experience_type}`)
       .then((response) => {
         return response.json()
       })
@@ -159,7 +159,7 @@ class Itinerary extends React.Component {
                                 <div className="white-font" key={index}>
                                     <div className="experience-label-font-white">{experience.experience_name}</div>
                                     <p className="white-font">{experience.experience_description}</p>
-                                    <p className="white-font">Price: $$<br/>
+                                    <p className="white-font">Price: $<br/>
                                     Hours: {experience.hours}<br/>
                                     Phone: {experience.phone_number}<br/>
                                     Address: {experience.address}<br/>
@@ -243,7 +243,7 @@ class Itinerary extends React.Component {
                       <div className="container">
                         <div className="row">
                           <div className="col-lg-6 col-md-6  col-sm-12">
-                              <img className="itinerary-image" src="https://s3.us-east-2.amazonaws.com/sandaygo-capstone/Mo'sBar.jpg"/>
+                              <img className="itinerary-image" src="https://slack-imgs.com/?c=1&url=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fsandaygo-capstone%2Fnightlife-gaslamp2.jpg"/>
                               <br/>
                               <br/>
                               <br/>
