@@ -538,3 +538,7 @@ a:link {
   background-image: url("paper.gif");
   background-repeat: round;
 }
+
+.google-map {
+    object-position: center;
+}
