@@ -11,12 +11,13 @@ import {
   Button
 } from 'react-bootstrap'
 
-
 class ExperienceAdmins extends React.Component {
       constructor(props){
        	    super(props)
        	    this.state = {
-       	      experiences: []
+                experiences: [],
+                lat: 32.715024,
+                long: -117.147639
        	    }
        	  }
 
@@ -56,6 +57,8 @@ class ExperienceAdmins extends React.Component {
 
 
   render () {
+      const {long,lat, google}=this.state 
+
     return (
 
     <React.Fragment>
@@ -90,7 +93,7 @@ class ExperienceAdmins extends React.Component {
             </div>
             <br/>
             {this.state.experiences.map((experience, index) =>
-            <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index}/>
+            <ExperienceAdmin experience={experience} index={index} delete={this.deleteExperience} key={index} long={long} lat={lat}/>
             )}
         </div>
     </React.Fragment>

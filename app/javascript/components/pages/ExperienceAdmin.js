@@ -3,27 +3,27 @@ import {
   Modal, Button
 } from 'react-bootstrap'
 import EditModal from './EditModal'
+import Map from './Map'
 import {
   Container,
   Row,
   Col,
   Card,
 } from 'react-bootstrap'
-
 import ExperiencePlaceholder from '../../images/Experience-Placeholder.jpg'
-import Map from '../../images/map.jpg'
+
 
 
 class ExperienceAdmin extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            modalShow: false,
-            modalEditShow:false,
-            experience:'',
-            id:''
-        }
-    }
+            experiences: [],
+            showingInfoWindow: true,
+            activeMarker: {},
+            selectedPlace: {},
+            }
+      }
     modalOpen = () => {
         this.setState({
            modalShow : true,
@@ -56,7 +56,7 @@ class ExperienceAdmin extends React.Component {
         modalEditShow: false
     })
     render () {
-        let {index, experience} = this.props
+        let {index, experience, long, lat, google} = this.props
 
         return (
             <div>
@@ -104,8 +104,18 @@ class ExperienceAdmin extends React.Component {
                         <p>Phone Number: {experience.phone_number}</p>
                         <p>Hours: {experience.hours}</p>
                         <p>Address: {experience.address}</p>
-                        <img src={Map} className="responsive" alt='Map of San Diego' />
+                        <Map className="google-map" />
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
                     </Modal.Body>
+
 
 
                     <Modal.Footer>
