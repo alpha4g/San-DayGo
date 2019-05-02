@@ -16,6 +16,10 @@ class ActiveStorage extends React.Component {
     const{ experience } = this.state
     return (
       <React.Fragment>
+        {experience && experience.photo_url &&}
+            <div>
+                <img src={experience.photo_url}
+            </div>
           <ActiveStorageProvider
             endpoint={{
               path: `/experiences/${experience.id}`,

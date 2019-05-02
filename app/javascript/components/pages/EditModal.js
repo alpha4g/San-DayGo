@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form, FormControl } from 'react-bootstrap'
 import ExperiencePlaceholder from '../../images/Experience-Placeholder.jpg'
+import ActiveStorage from './ActiveStorage'
 
 class EditModal extends Component {
     constructor(props) {
@@ -114,6 +115,7 @@ class EditModal extends Component {
                             <Form.Label id="hours">Hours</Form.Label>
                             <FormControl name="hours" type="text" defaultValue={form.hours} onChange={this.handleChange} />
                             <br/>
+                            <ActiveStorage experience={experience} />
                         </Form>
                     </Modal.Body>
 
