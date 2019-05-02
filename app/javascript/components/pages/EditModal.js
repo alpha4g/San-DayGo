@@ -83,7 +83,7 @@ class EditModal extends Component {
                                 <option>Family</option>
                                 <option>Sports</option>
                                 <option>Cultural</option>
-                                <option>Fashon</option>
+                                <option>Fashion</option>
                                 <option>LGBT</option>
                                 <option>Outdoor</option>
                             </Form.Control>
