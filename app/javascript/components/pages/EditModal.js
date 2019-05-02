@@ -57,6 +57,7 @@ class EditModal extends Component {
     }
 
     render() {
+        let {experience} = this.props
         let {form} = this.state
           console.log(this.state);
         return (
