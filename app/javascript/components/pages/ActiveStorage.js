@@ -24,7 +24,7 @@ class ActiveStorage extends React.Component {
           <ActiveStorageProvider
             endpoint={{
               path: `/experiences/${experience.id}`,
-              model: 'Experiences',
+              model: 'Experience',
               attribute: 'photo',
               method: 'PUT',
             }}
