@@ -76,7 +76,6 @@ class EditModal extends Component {
                             <Form.Label id="experience_type">Experience Type</Form.Label>
                             <Form.Control
                             name="experience_type"  defaultValue={form.experience_type} onChange={this.handleChange} as="select">
-                                <option>Restaurant</option>
                                 <option>Adrenaline</option>
                                 <option>Food</option>
                                 <option>Beach</option>

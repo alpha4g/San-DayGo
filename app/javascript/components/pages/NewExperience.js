@@ -78,7 +78,6 @@ class NewExperience extends React.Component {
                     as="select"
                     defaultValue={'DEFAULT'}>
                         <option value="DEFAULT" disabled>Choose One</option>
-                        <option>Restaurant</option>
                         <option>Adrenaline</option>
                         <option>Food</option>
                         <option>Beach</option>
