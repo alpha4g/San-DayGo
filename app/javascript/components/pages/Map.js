@@ -30,8 +30,8 @@ class GoogleMap extends React.Component {
   }
   render() {
     const style = {
-      width: '40vw',
-      height: '40vh',
+      width: '23vw',
+      height: '23vh',
       'marginLeft': '0px',
       'marginRight': '0px'
     }
